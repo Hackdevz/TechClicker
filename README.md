@@ -1,13 +1,13 @@
-# Hi!
-# Welcome to hell
-# You're not allowed to see this code
-# Please come back later.
+# Hi and Welcome to hell!
+# Probably, you're not allowed to see this code
+# Come back in 2018.
 
 
-# We are making an idle game
-# Progress:   0.000 %
 
-# GOODBYE.
-# The Hackdevz team
+#       We are making an idle game
+#         Progress:   0.000 %
+
+#               GOODBYE.
+#                 The Hackdevz team
 
 
