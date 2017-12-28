@@ -4,10 +4,10 @@
 
 
 
-#       We are making an idle game
-#         Progress:   0.000 %
+# ________We are making an idle game
+# ________Progress:   0.000 %
 
-#               GOODBYE.
-#                 The Hackdevz team
+#______________GOODBYE.
+#-----------------The Hackdevz team
 
 
