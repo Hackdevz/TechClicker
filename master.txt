@@ -46,6 +46,6 @@ Buildings
 		icon:http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Devices-computer-icon.png
 		on tick:yield 1 computer
 		on tick:yield 0.4 data
-		on tick:yield (1/15000000000000) XP
+		on tick:yield (1/15000000000000) xp
 	
 		
