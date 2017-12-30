@@ -52,8 +52,10 @@ Buildings
 		cost:350 money
 		icon:https://i.imgur.com/LjJ9Yit.jpg
 		on tick:yield 2 data
-		on tick:yield (1/60) computer
-		on tick:yield (1/65000000) xp
+		on tick:yield 0.1666667 computer
+		passive:grant 0.005 xp
+		
+	
 
 	
 		
