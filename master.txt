@@ -1,0 +1,44 @@
+// Run away, dude
+//------------------------------------------------------------------------------------------------------------------------------------------
+Let's make a game!
+			Name: Techlicker
+			Desc: Power up your technologies!
+			by:HackDevZ
+			Version: Alpha
+ 
+Settings
+			building cost increase: 108%// Oh magic
+			building cost refund: 66.6%// Devilry	
+			spritesheet:cookie, 48 by 48, orteil.dashnet.org/cookieclicker/img/icons.png
+																																									// Cookies stuff
+			stylesheet:https://pastebin.com/raw/ATQMMk3t
+																																									// Everyone uses this
+																																									// We love peanut butters, we don't copy them
+ 
+Buttons
+			*click
+						name:Write Code
+						desc:Write code, get data and earn money! All in one super technological button 2000!
+						on click:yield 1 data
+						on click:yield 1 money
+						class:bigButton hasFlares
+						Icon:http://openclipart.org/image/250px/svg_to_png/159709/computer-laptop.png
+						tooltip origin:bottom
+						show clicks
+						req:1 computer
+Resources
+			*data
+					name:Data
+					desc:Data.
+					
+			*money
+					name:$$$
+					desc:With this you can buy everything.
+					start with:250
+Buildings
+			*computer
+					name:Computer
+					desc:You can do everything with this
+					no buy
+					start with:1
+					icon:http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Devices-computer-icon.png
