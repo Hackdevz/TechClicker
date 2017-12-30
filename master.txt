@@ -50,7 +50,7 @@ Buildings
 		name:Assembly language
 		desc:MODEL SMALL STACK 100H .DATA HW DB      "hello, world", 13, 10, '$' .CODE .STARTUP MOV AX, @data MOV DS, AX MOV DX, OFFSET HW MOV AH, 09H INT 21H MOV AX, 4C00H INT 21H END is the <b>Hello World program<b/>. Looks pretty hard!<//><br>Creates <b>2 data</b> every seconds and makes <b>a computer every minute</b>.
 		cost:350 money
-		icon:https://imgur.com/a/QC2r0
+		icon:https://i.imgur.com/LjJ9Yit.jpg
 		on tick:yield 2 data
 		on tick:yield (1/60) computer
 		on tick:yield (1/65000000) xp
