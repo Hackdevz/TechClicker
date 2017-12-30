@@ -40,12 +40,20 @@ Resources
 Buildings
 	*computer
 		name:Computer
-		desc:You can do everything with this. Reproduces itself every <b>second</b>. Creates <b>0.4 bytes</b> every second.
+		desc:You can do everything with this. Creates <b>0.4 bytes</b> every second.
 		no buy
 		start with:1
 		icon:http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Devices-computer-icon.png
-		on tick:yield 1 computer
 		on tick:yield 0.4 data
 		on tick:yield (1/15000000000000) xp
+	*assembly
+		name:Assembly language
+		desc:MODEL SMALL STACK 100H .DATA HW DB      "hello, world", 13, 10, '$' .CODE .STARTUP MOV AX, @data MOV DS, AX MOV DX, OFFSET HW MOV AH, 09H INT 21H MOV AX, 4C00H INT 21H END is the <b>Hello World program<b/>. Looks pretty hard!<br>Creates <b>2 data<b/> every seconds and makes <b>a computer every minute.
+		cost:350
+		icon:https://imgur.com/a/QC2r0
+		on tick:yield 2 data
+		on tick:yield (1/60) computer
+		on tick:yield (1/65000000) xp
+
 	
 		
