@@ -1,6 +1,5 @@
-// Run away, dude
-//------------------------------------------------------------------------------------------------------------------------------------------
 Let's make a game!
+// And run away!
 			Name: Techlicker
 			Desc: Power up your technologies!
 			by:HackDevZ
