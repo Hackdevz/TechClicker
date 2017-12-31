@@ -59,10 +59,34 @@ Buildings
 Upgrades
 	*perfect
 		name:Perfect coding
-		desc:Your code works better and every line of code now is<b>2 bytes.</b>.
+		desc:Your code works better and every line of code now is <b>2 bytes.</b>.
 		passive:multiply yield of click by 2
 		passive:grant 0.005 xp
 		icon:http://icons.iconarchive.com/icons/sportsbettingspot/summer-olympics/48/archery-icon.png
+		req:256 data
+		cost:512 money
+		//sportsbettingspot.com
+		//Copyright, sir
+		
+	*perfectII
+		name:Faster coding
+		desc:Your PC is faster and every line of code now is <b>4 bytes.</b>.
+		passive:multiply yield of click by 2
+		passive:grant 0.0075 xp
+		icon:http://icons.iconarchive.com/icons/paomedia/small-n-flat/48/lightning-icon.png
+		req:512 data
+		cost:1024 money
+		//Powers Of Two
+	
+	*assemblyI
+		name:Assembler 2.0
+		desc:Your assembler works <b>80% faster</b>.
+		passive:multiply yield of assembly by 1.8
+		passive:grant 0.005 xp
+		icon:http://icons.iconarchive.com/icons/paomedia/small-n-flat/48/cogs-icon.png
+		req:360 data
+		req:2 assembly
+		cost:4000 money
 	
 		
 	
