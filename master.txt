@@ -6,6 +6,7 @@ Let's make a game!
 	Version: Alpha
  
 Settings
+	background:https://previews.123rf.com/images/stori/stori1602/stori160200060/53293940-mappa-del-mondo-su-un-background-tecnologico-linee-incandescente-simboli-delle-comunicazioni-interne-Archivio-Fotografico.jpg
 	building cost increase: 108%// Oh magic
 	building cost refund: 66.6%// Devilry	
 	custom spritesheet:cookie, 48 by 48, orteil.dashnet.org/cookieclicker/img/icons.png
@@ -48,12 +49,21 @@ Buildings
 		on tick:yield (1/15000000000000) xp
 	*assembly
 		name:Assembly language
-		desc:MODEL SMALL STACK 100H .DATA HW DB      "hello, world", 13, 10, '$' .CODE .STARTUP MOV AX, @data MOV DS, AX MOV DX, OFFSET HW MOV AH, 09H INT 21H MOV AX, 4C00H INT 21H END is the <b>Hello World program<b/>. Looks pretty hard!<//><br>Creates <b>2 data</b> every seconds and makes <b>a computer every minute</b>.
+		desc:The first official programming language.<//><br>Creates <b>2 data</b> every seconds and makes <b>a computer every minute</b>.
 		cost:350 money
 		icon:https://i.imgur.com/LjJ9Yit.jpg
 		on tick:yield 2 data
-		on tick:yield 0.1666667 computer
+		on tick:yield 0.01666667 computer
 		passive:grant 0.005 xp
+
+Upgrades
+	*perfect
+		name:Perfect coding
+		desc:Your code works better and every line of code now is<b>2 bytes.</b>.
+		passive:multiply yield of click by 2
+		passive:grant 0.005 xp
+		icon:http://icons.iconarchive.com/icons/sportsbettingspot/summer-olympics/48/archery-icon.png
+	
 		
 	
 
