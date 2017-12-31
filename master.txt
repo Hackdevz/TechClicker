@@ -47,6 +47,8 @@ Buildings
 		icon:http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Devices-computer-icon.png
 		on tick:yield 0.4 data
 		on tick:yield (1/15000000000000) xp
+		on tick:yield 0.4 money
+		
 	*assembly
 		name:Assembly language
 		desc:The first official programming language.<//><br>Creates <b>2 data</b> every seconds and makes <b>a computer every minute</b>.
@@ -54,6 +56,7 @@ Buildings
 		icon:https://i.imgur.com/LjJ9Yit.jpg
 		on tick:yield 2 data
 		on tick:yield 0.01666667 computer
+		on tick:yield 2 money//Sorry
 		passive:grant 0.005 xp
 
 Upgrades
