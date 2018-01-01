@@ -60,7 +60,7 @@ Buildings
 		passive:grant 0.005 xp
 		
 	*fortran
-		name:Assembly language
+		name:Fortran language
 		desc:A programming language for maths.<//>Creates <b>10 data</b> every seconds and makes <b>a computer every 50 seconds</b>.
 		cost:1600 money
 		req:2 xp
