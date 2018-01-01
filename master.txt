@@ -10,7 +10,7 @@ Settings
 	building cost increase: 108%// Oh magic
 	building cost refund: 66.6%// Devilry	
 	spritesheet:cookie, 48 by 48, http://orteil.dashnet.org/cookieclicker/img/icons.png
-	stylesheet::https://pastebin.com/raw/ATQMMk3t
+	stylesheet:https://pastebin.com/raw/WqtR6aZ7
 	// Thanks Eric
 	// We love peanut butters, we don't copy them
  
