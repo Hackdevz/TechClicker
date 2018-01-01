@@ -6,7 +6,7 @@ Let's make a game!
 	Version: Alpha
  
 Settings
-	background:https://previews.123rf.com/images/stori/stori1602/stori160200060/53293940-mappa-del-mondo-su-un-background-tecnologico-linee-incandescente-simboli-delle-comunicazioni-interne-Archivio-Fotografico.jpg
+	background:http://www.powerpointhintergrund.com/uploads/network-hd-desktop-technology-wallpaper-background-28.jpeg
 	building cost increase: 108%// Oh magic
 	building cost refund: 66.6%// Devilry	
 	custom spritesheet:cookie, 48 by 48, orteil.dashnet.org/cookieclicker/img/icons.png
