@@ -62,7 +62,7 @@ Buildings
 Upgrades
 	*perfect
 		name:Perfect coding
-		desc:Your code works better and every line of code now is <b>2 bytes.</b>.
+		desc:Your code works better and every line of code now is <b>2 bytes.</b>. Icon by sportsbettingspot.com
 		passive:multiply yield of click by 2
 		passive:grant 0.005 xp
 		icon:http://icons.iconarchive.com/icons/sportsbettingspot/summer-olympics/48/archery-icon.png
