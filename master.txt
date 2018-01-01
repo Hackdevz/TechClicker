@@ -10,8 +10,8 @@ Settings
 	building cost increase: 108%// Oh magic
 	building cost refund: 66.6%// Devilry	
 	custom spritesheet:cookie, 48 by 48, orteil.dashnet.org/cookieclicker/img/icons.png
-	stylesheet:http://orteil.dashnet.org/igm/stuff/bigBlue.css
-	// <3rteil
+	stylesheet::https://pastebin.com/raw/ATQMMk3t
+	// Thanks Eric
 	// We love peanut butters, we don't copy them
  
 Buttons
@@ -51,7 +51,7 @@ Buildings
 		
 	*assembly
 		name:Assembly language
-		desc:The first official programming language.<//><br>Creates <b>2 data</b> every seconds and makes <b>a computer every minute</b>.
+		desc:The first official programming language.<//>Creates <b>2 data</b> every seconds and makes <b>a computer every minute</b>.
 		cost:350 money
 		icon:https://i.imgur.com/LjJ9Yit.jpg
 		on tick:yield 2 data
@@ -83,14 +83,74 @@ Upgrades
 	
 	*assemblyI
 		name:Assembler 2.0
-		desc:Your assembler works <b>80% faster</b>.
+		desc:Your assembler works <b>80% faster</b>. Tier: Plain
 		passive:multiply yield of assembly by 1.8
 		passive:grant 0.33 xp
-		icon:http://icons.iconarchive.com/icons/paomedia/small-n-flat/48/cogs-icon.png
+		icon:cookie[4,0]
 		req:360 data
 		req:2 assembly
 		cost:4000 money
+		
+	*assemblyII
+		name:Assembler 3.0
+		desc:Your assembler works <b>90% faster</b>.  Tier: Rose
+		passive:multiply yield of assembly by 1.9
+		passive:grant 0.275 xp
+		icon:cookie[4,1]
+		req:36000 data
+		req:10 assembly
+		cost:400000 money
+		
+	*assemblyIII
+		name:Assembler 4.0
+		desc:Your assembler works <b>100% faster</b>.   Tier: Azure
+		passive:multiply yield of assembly by 2
+		passive:grant 0.25 xp
+		icon:cookie[4,2]
+		req:3600000 data
+		req:25 assembly
+		cost:40000000 money
 	
+	*assemblyIV
+		name:Assembler 5.0
+		desc:Your assembler works <b>100% faster</b>.   Tier: Goldy
+		passive:multiply yield of assembly by 2
+		passive:grant 0.2 xp
+		icon:cookie[4,13]
+		req:360000000 data
+		req:50 assembly
+		cost:4000000000 money
+		
+	
+	*assemblyV
+		name:Assembler 6.0
+		desc:Your assembler works <b>100% faster</b>.   Tier: Special
+		passive:multiply yield of assembly by 2
+		passive:grant 0.12 xp
+		icon:cookie[4,14]
+		req:36000000000 data
+		req:100 assembly
+		cost:400000000000 money
+	*assemblyVI
+		name:Assembler 7.0
+		desc:Your assembler works <b>100% faster</b>.   Tier: Metal
+		passive:multiply yield of assembly by 2
+		passive:grant 0.12 xp
+		icon:cookie[4,15]
+		req:3600000000000 data
+		req:150 assembly
+		cost:400000000000000 money
+		
+	*assemblyVII
+		name:Assembler 8.0
+		desc:Your assembler works <b>100% faster</b>.   Tier: Jet
+		passive:multiply yield of assembly by 2
+		passive:grant 0.07 xp
+		icon:cookie[4,16]
+		req:3600000000000000 data
+		req:200 assembly
+		cost:400000000000000000 money	
+		
 		
 	
 
