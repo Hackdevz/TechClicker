@@ -174,7 +174,7 @@ Upgrades
 		desc:Your assembler works <b>100% faster</b>.   Tier: Moonie
 		passive:multiply yield of assembly by 2
 		passive:grant 0.07 xp
-		icon:cookie[4,18]
+		icon:cookie[4,19]
 		req:300 assembly
 		cost:4e25 money
 		
