@@ -58,6 +58,20 @@ Buildings
 		on tick:yield 0.01666667 computer
 		on tick:yield 2 money
 		passive:grant 0.005 xp
+		
+	*fortran
+		name:Assembly language
+		desc:A programming language for maths.<//>Creates <b>10 data</b> every seconds and makes <b>a computer every 50 seconds</b>.
+		cost:1600 money
+		req:2 xp
+		icon:https://i.imgur.com/aF8r96r.jpg
+		on tick:yield 10 data
+		on tick:yield 0.02 computer
+		on tick:yield 10 money
+		passive:grant 0.005 xp
+		
+		
+		
 
 Upgrades
 	*perfect
