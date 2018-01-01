@@ -9,7 +9,7 @@ Settings
 	background:http://www.powerpointhintergrund.com/uploads/network-hd-desktop-technology-wallpaper-background-28.jpeg
 	building cost increase: 108%// Oh magic
 	building cost refund: 66.6%// Devilry	
-	custom spritesheet:cookie, 48 by 48, orteil.dashnet.org/cookieclicker/img/icons.png
+	spritesheet:cookie, 48 by 48, http://orteil.dashnet.org/cookieclicker/img/icons.png
 	stylesheet::https://pastebin.com/raw/ATQMMk3t
 	// Thanks Eric
 	// We love peanut butters, we don't copy them
