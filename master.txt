@@ -41,9 +41,13 @@ Resources
 		start with:1
 		text:XP
 		icon:http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Actions-rating-icon.png
+		limit:100
+		
 	*power
 		name:Antivirus power
-		text:Anti-virus power: 
+		text:Anti-virus power: [power] 
+		desc:Max power is 50000.
+		limit:50000.
 		req:antivirus
 		req:10 xp
 	
@@ -65,13 +69,15 @@ Resources
 	*Min
 		name:Time machine
 		tag:stat
-		text:Timer:[Min/60]:[Min%60]:[Sec%60]
+		text:[Min/60]:[Min%60]:[Sec%60]
+		desc:Time played : [Min/60]:[Min%60]:[Sec%60]
 		icon:http://icons.iconarchive.com/icons/mazenl77/I-like-buttons-3a/48/Perspective-Button-Time-icon.png
 		
 	*bugsFix
 		name:Bugs fixed
 		icon:http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Actions-dialog-close-icon.png
 		tag:stat
+		desc:All the bugs fixed
 	
 	*
 		
@@ -153,12 +159,28 @@ Buildings
 	*firewall
 		name:Firewall
 		text:Firewall ([this]%)
-		desc:A huge firewall to protect your data, which will take time and effort to complete.<//><b>The firewall is [this]% complete.</b>
-		icon:icons[3,8]
-		cost:35000000 data
+		desc:A huge firewall to protect your data from viruses, which will take time and effort to complete.<//><b>The firewall is [this]% complete.</b>
+		icon:https://findicons.com/files/icons/977/rrze/48/firewall.png
+		cost:35000000 money
 		req:10 xp
 		limit:100
+		on tick:yield 800 money
+		on tick:yield 800 data
+		on tick:yield 1 security
 		cost increase:120%
+		
+		
+	*antivirus
+		name:Anti-virus
+		text:Antivirus Tower lv  [this]
+		desc:Unlocks the <b>destroy virus</b> ability .<//><b>Produces [this] power every second.</b>Max level is 500
+		icon:http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Status-security-high-icon.png
+		cost:1000000 money
+		req:10 xp
+		limit:500
+		on tick:yield 1 power		
+		
+
 
 Upgrades
 
