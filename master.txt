@@ -48,16 +48,16 @@ Resources
 		
 	*Sec
 		name:Seconds played
-		tag:stat
+		
 		
 		
 	*Min
 		name:Minutes played
-		tag:stat
+		
 		
 	*bugsFix
 		name:Bugs fixed
-		tag:stat
+		
 	
 	
 	
