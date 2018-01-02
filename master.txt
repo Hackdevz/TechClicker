@@ -37,52 +37,82 @@ Resources
 	*xp
 		name:XP
 		start with:1
-					
-Buildings
+	
 	*computer
-		name:Computer
-		desc:You can do everything with this. Creates <b>0.4 bytes</b> every second.
-		no buy
+		name:Computers in your net
+		desc:You can do everything with this.
 		start with:1
 		icon:http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Devices-computer-icon.png
-		on tick:yield 0.4 data
-		on tick:yield (1/15000000000000) xp
-		on tick:yield 0.4 money
+		
+	*Sec
+		name:Seconds played
+		
+	*Min
+		name:Minutes played
+		
+		
+	*bugsFix
+		name:Bugs fixed
+	
+	
+	
+	
+Buildings
+	*test
+		on tick:yield (1/60) Min
+		on tick:yield 1 Sec
+		on tick:yield 1 computer
+		// try better next tume
+	
 		
 	*assembly
 		name:Assembly language
-		desc:The first official programming language.<//>Creates <b>2 data</b> every seconds and makes <b>a computer every minute</b>.
+		desc:The first official programming language.<//>Creates <b>2 data</b> every second.
 		cost:350 money
 		icon:https://i.imgur.com/LjJ9Yit.jpg
 		on tick:yield 2 data
-		on tick:yield 0.0167 computer
 		on tick:yield 2 money
 		passive:grant 0.005 xp
 		
 	*fortran
 		name:Fortran language
-		desc:A programming language for maths.<//>Creates <b>10 data</b> every seconds and makes <b>a computer every 50 seconds</b>.
+		desc:A programming language for maths.<//>Creates <b>10 data</b> every seconds.
 		cost:1600 money
 		req:2 xp
 		icon:https://i.imgur.com/aF8r96r.jpg
 		on tick:yield 10 data
-		on tick:yield 0.02 computer
 		on tick:yield 10 money
 		passive:grant 0.005 xp
 		
 	*c
 		name:C
-		desc:<b>THE</b> programming language. With this you can create Windows. <//>Creates <b>40 data</b> every second and makes <b>a computer every 40 seconds</b>.
-		cost:1600 money
-		req:2 xp
+		desc:<b>THE</b> programming language. With this you can create Windows. <//>Creates <b>40 data</b> every second.
+		cost:8000 money
+		req:cProg
 		icon:https://i.imgur.com/6JvYppL.jpg
 		on tick:yield 40 data
-		on tick:yield 0.025 computer
 		on tick:yield 40 money
 		passive:grant 0.005 xp
 		
 
 Upgrades
+
+	*fixBug
+        name:Fix the bug
+        desc:Fix a bug with <b>10% of your</b> money. ( It works only 90% of the time)
+        no buy
+        on click:if (money>=(money/10)) yield -(money/10) money
+        on click:
+            if (money>=(money/10))
+                if (chance(90%))
+                    yield 1 bugsFix
+		    yield (data/10) data
+                    toast You fixed the bug!
+                else
+                    toast Bip bup, the bug is still there 
+                end
+            end
+        end
 
 	*cProg
 		name:The C Programming Language
