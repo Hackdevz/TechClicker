@@ -52,6 +52,18 @@
 	position:absolute;
 }
 
+#box-buildings,#box-upgrades,#box-achievs,#box-stats
+{
+    top:0px;
+    bottom:0px;
+    width:50%;
+    overflow-x:hidden;
+    overflow-y:scroll;
+    padding-bottom:48px;
+    position:absolute;
+    border:5px ridge grey;
+}
+
 #box-stats
 {
     right:100%;
