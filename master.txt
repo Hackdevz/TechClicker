@@ -396,6 +396,7 @@ Upgrades
 		passive:grant 0.05 xp
 		req:2 c
 		cost:300000 money
+		req:5 xp
 		
 	*C2
 		name:GCC
