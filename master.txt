@@ -95,6 +95,7 @@ Buildings
 		on tick:yield 1 Sec
 		always hidden	
 		// try better next time
+		start with:1
 	
 		
 	*assembly
