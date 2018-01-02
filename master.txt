@@ -197,11 +197,11 @@ Upgrades
 		
 	*perfectIII
 		name:Coding plant
-		desc:Your PC is faster and every byte now counts as <b>1.10 bytes</b>. This splendid icon is by https://raindropmemory.deviantart.com/
+		desc:Data is generated <b>10% faster</b>. This splendid icon is by https://raindropmemory.deviantart.com/
 		passive:multiply yield of bytes by 1.1
 		passive:multiply yield of money by 1.1
 		passive:grant 0.5 xp
-		icon:http://icons.iconarchive.com/icons/raindropmemory/down-to-earth/256/G12-Flowerpot-Plant-icon.png
+		http://icons.iconarchive.com/icons/raindropmemory/down-to-earth/48/G12-Flowerpot-Plant-icon.png
 		req:3 xp
 		cost:160000 money
 		
