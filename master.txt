@@ -60,7 +60,7 @@ Resources
 		name:Minutes played
 		tag:stat
 		text:Time machine
-		desc:TOTAL TIME PLAYED == [Min:60]h [Min%60]m [Sec%60]s
+		desc:TOTAL TIME PLAYED == [Min/60]h [Min%60]m [Sec%60]s
 		
 	*bugsFix
 		name:Bugs fixed
