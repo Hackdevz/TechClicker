@@ -61,6 +61,7 @@ Resources
 		tag:stat
 		text:Time machine
 		desc:TOTAL TIME PLAYED == [Min/60]h [Min%60]m [Sec%60]s
+		icon:http://icons.iconarchive.com/icons/mazenl77/I-like-buttons-3a/48/Perspective-Button-Time-icon.png
 		
 	*bugsFix
 		name:Bugs fixed
