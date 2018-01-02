@@ -86,8 +86,8 @@ Buildings
 	*test
 		on tick:yield (1/60) Min
 		on tick:yield 1 Sec
-		on tick:yield 1 computer
-		// try better next tume
+		always hidden	
+		// try better next time
 	
 		
 	*assembly
