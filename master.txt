@@ -36,14 +36,14 @@ Resources
 	*xp
 		name:XP
 		start with:1
-		text: You are level [xp]------------------------------
+		text: You are level [xp]
 	
 	*computer
 		name:Computers in your net
 		desc:You can do everything with this.
 		start with:1
 		icon:http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Devices-computer-icon.png
-		
+		req:Net
 
 		
 	*Sec
@@ -80,12 +80,7 @@ Layout
     			header:Upgrade your systems
     			costs:hide
     			names:hide
-    
-  		*achievements
-   			contains:Achievements
-   			header:Trophies
-	
-	
+    	
 	
 Buildings
 	*test
@@ -129,7 +124,7 @@ Upgrades
 
 	*fixBug
         name:Fix the bug
-        desc:Fix a bug with <b>10% of your</b> money. ( It works only 90% of the time)
+        desc:Fix a bug with <b>[money/10]</b> money. ( It works only 90% of the time)
         no buy
         on click:if (money>=(money/10)) yield -(money/10) money
         on click:
