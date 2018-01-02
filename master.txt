@@ -38,12 +38,12 @@ Resources
 		start with:1
 		text: You are level [xp]
 	
-	*computer
+	/* *computer
 		name:Computers in your net
 		desc:You can do everything with this.
 		start with:1
 		icon:http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Devices-computer-icon.png
-		//req:Net
+		tag:stat */
 
 		
 	*Sec
@@ -366,8 +366,78 @@ Upgrades
 		req:300 fortran
 		cost:1e26 money
 		
-	
+	*C1
+		name:Ansi C
+		desc:An advanced C compilator. Works twice as fast.  Tier: ANSI
+		icon:https://i.imgur.com/6JvYppL.jpg
+		passive:multiply yield of c by 2
+		passive:grant 0.05 xp
+		req:2 c
+		cost:300000 money
 		
+	*C2
+		name:GCC
+		desc:A super advanced C compilator. Works thrice as fast.  Tier: ANSI+
+		icon:https://i.imgur.com/6JvYppL.jpg
+		passive:multiply yield of c by 3
+		passive:grant 0.05 xp
+		req:10 c
+		cost:3e7 money
+		
+	*C3
+		name:TCC
+		desc:An hyper-advanced C compilator. Works fourice as fast.  Tier: ANSI++
+		icon:https://i.imgur.com/6JvYppL.jpg
+		passive:multiply yield of c by 4
+		passive:grant 0.05 xp
+		req:25 c
+		cost:3e9 money
+		
+	*C4
+		name:Atomic-C
+		desc:An atomic C compilator. Works fivice as fast.  Tier: Atomic
+		icon:https://i.imgur.com/6JvYppL.jpg
+		passive:multiply yield of c by 5
+		passive:grant 0.05 xp
+		req:50 c
+		cost:3e11 money
+	
+	*C5
+		name:Revolver C
+		desc:The newest C compilator. Works ten times as fast.  Tier: Revolver
+		icon:https://i.imgur.com/6JvYppL.jpg
+		passive:multiply yield of c by 10
+		passive:grant 0.05 xp
+		req:100 c
+		cost:3.14159265e14 money
+		//PI
+		
+	*C6
+		name:Explosive-C (C4)
+		desc:The BOOM C compilator. Works eleven times as fast.  Tier: Explosive
+		icon:https://i.imgur.com/6JvYppL.jpg
+		passive:multiply yield of c by 11
+		passive:grant 0.05 xp
+		req:150 c
+		cost:3e17 money
+		
+	*C7
+		name:Dark-C
+		desc:The darkest C compilator. Works 20 times as fast.  Tier: Dark
+		icon:https://i.imgur.com/6JvYppL.jpg
+		passive:multiply yield of c by 20
+		passive:grant 0.05 xp
+		req:200 c
+		cost:3e20 money
+	
+	*CX
+		name:C-X
+		desc:The C-est compilator.
+		icon:https://i.imgur.com/6JvYppL.jpg
+		passive:multiply yield of c by (c/2)
+		passive:grant 0.05 xp
+		req:1000000 data
+		cost:1e8 money
 	
 		
 		
