@@ -21,7 +21,7 @@ Buttons
 		Icon:http://openclipart.org/image/250px/svg_to_png/159709/computer-laptop.png
 		tooltip origin:bottom
 		show clicks
-		req:1 computer
+		
 Resources
 	*data
 		name:Byte|Bytes
@@ -92,33 +92,42 @@ Buildings
 		
 	*assembly
 		name:Assembly language
-		desc:The first official programming language.<//>Creates <b>2 data</b> every second.
+		desc:The first official programming language.<//>Creates <b>5 data</b> every second.
 		cost:350 money
 		icon:https://i.imgur.com/LjJ9Yit.jpg
-		on tick:yield 2 data
-		on tick:yield 2 money
+		on tick:yield 5 data
+		on tick:yield 5 money
 		passive:grant 0.005 xp
 		
 	*fortran
 		name:Fortran language
-		desc:A programming language for maths.<//>Creates <b>10 data</b> every seconds.
+		desc:A programming language for maths.<//>Creates <b>20 data</b> every seconds.
 		cost:1600 money
 		req:2 xp
 		icon:https://i.imgur.com/aF8r96r.jpg
-		on tick:yield 10 data
-		on tick:yield 10 money
+		on tick:yield 20 data
+		on tick:yield 20 money
 		passive:grant 0.005 xp
 		
 	*c
 		name:C
-		desc:<b>THE</b> programming language. With this you can create Windows. <//>Creates <b>40 data</b> every second.
+		desc:<b>THE</b> programming language. With this you can create Windows. <//>Creates <b>150 data</b> every second.
 		cost:8000 money
 		req:cProg
 		icon:https://i.imgur.com/6JvYppL.jpg
-		on tick:yield 40 data
-		on tick:yield 40 money
+		on tick:yield 150 data
+		on tick:yield 150 money
 		passive:grant 0.005 xp
 		
+	*c++
+		name:C++
+		desc:The advanced version of <b>THE</b> programming language. <//>Creates <b>600 data</b> every second.
+		cost:75000 money
+		req:ClassyC
+		icon:https://i.imgur.com/6JvYppL.jpg
+		on tick:yield 600 data
+		on tick:yield 600 money
+		passive:grant 0.005 xp
 
 Upgrades
 
@@ -139,6 +148,19 @@ Upgrades
             end
         end
 
+
+	*ClassyC
+		name:The C Programming Language
+		desc:int main () { std::cout << " Hello! "; std::cout << " Power Up My C "; } <//> Unlocks the <b>C++ programming language.</b>
+		passive:grant 0.1 xp
+		icon:http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Actions-address-book-new-icon.png
+		req:7 xp
+		req:10 c
+		cost:2500000 money
+		passive:multiply yield of click by 2
+		
+		
+		
 	*cProg
 		name:The C Programming Language
 		desc:include <stdio.h>, int main { printf("Let's begin") } return 0; <//> Unlocks the <b>C programming language.</b>
@@ -438,6 +460,7 @@ Upgrades
 		passive:grant 0.05 xp
 		req:1000000 data
 		cost:1e8 money
+		
 	
 		
 		
