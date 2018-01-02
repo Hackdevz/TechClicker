@@ -53,11 +53,14 @@ Resources
 	*Sec
 		name:Seconds played
 		tag:stat
+		always hidden
 		
 		
 	*Min
 		name:Minutes played
 		tag:stat
+		text:Time machine
+		desc:TOTAL TIME PLAYED == [Min:60]h [Min%60]m [Sec%60]s
 		
 	*bugsFix
 		name:Bugs fixed
@@ -201,7 +204,7 @@ Upgrades
 		passive:multiply yield of bytes by 1.1
 		passive:multiply yield of money by 1.1
 		passive:grant 0.5 xp
-		http://icons.iconarchive.com/icons/raindropmemory/down-to-earth/48/G12-Flowerpot-Plant-icon.png
+		icon:http://icons.iconarchive.com/icons/raindropmemory/down-to-earth/48/G12-Flowerpot-Plant-icon.png
 		req:3 xp
 		cost:160000 money
 		
