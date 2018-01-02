@@ -119,12 +119,12 @@ Buildings
 		on tick:yield 150 money
 		passive:grant 0.005 xp
 		
-	*c++
+	*cpp
 		name:C++
 		desc:The advanced version of <b>THE</b> programming language. <//>Creates <b>600 data</b> every second.
 		cost:75000 money
 		req:ClassyC
-		icon:https://i.imgur.com/6JvYppL.jpg
+		icon:https://i.imgur.com/o1WgmFz.jpg
 		on tick:yield 600 data
 		on tick:yield 600 money
 		passive:grant 0.005 xp
@@ -150,7 +150,7 @@ Upgrades
 
 
 	*ClassyC
-		name:The C Programming Language
+		name:C with Classes
 		desc:int main () { std::cout << " Hello! "; std::cout << " Power Up My C "; } <//> Unlocks the <b>C++ programming language.</b>
 		passive:grant 0.1 xp
 		icon:http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Actions-address-book-new-icon.png
