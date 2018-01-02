@@ -33,6 +33,16 @@
     background:#cf5055;
 }
 
+#box-stats.fullWidth
+{
+    width:100%;
+    top:5%;
+    height:5%;
+    min-height:32px;
+    z-index:100;
+    position:absolute;
+}
+ 
 #box-main
 {
 	left:0px;
