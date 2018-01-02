@@ -194,7 +194,17 @@ Upgrades
 		req:512 data
 		cost:1024 money
 		//Powers Of Two
-	
+		
+	*perfectIII
+		name:Coding plant
+		desc:Your PC is faster and every line of code now is <b>[assembly*700] times bigger.</b>.
+		passive:multiply yield of click by (assembly*700)
+		passive:grant 0.33 xp
+		icon:http://icons.iconarchive.com/icons/paomedia/small-n-flat/48/lightning-icon.png
+		req:512 data
+		cost:1024 money
+		//Powers Of Two
+		
 	*assemblyI
 		name:Assembler 2.0
 		desc:Your assembler works <b>80% faster</b>. Tier: Plain
@@ -465,9 +475,6 @@ Upgrades
 		passive:grant 0.05 xp
 		req:1000000 data
 		cost:1e8 money
-		
-	
-		
 		
 	
 
