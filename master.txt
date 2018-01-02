@@ -41,6 +41,12 @@ Resources
 		start with:1
 		text:XP
 		icon:http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Actions-rating-icon.png
+	*power
+		name:Antivirus power
+		text:Anti-virus power: 
+		req:antivirus
+		req:10 xp
+	
 	
 	/* *computer
 		name:Computers in your net
@@ -64,7 +70,11 @@ Resources
 		
 	*bugsFix
 		name:Bugs fixed
+		icon:http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Actions-dialog-close-icon.png
 		tag:stat
+	
+	*
+		
 Layout
 	*main
   		contains:res, stat, buttons
@@ -105,6 +115,7 @@ Buildings
 		icon:https://i.imgur.com/LjJ9Yit.jpg
 		on tick:yield 5 data
 		on tick:yield 5 money
+		text:Assembly  lv [this]
 		passive:grant 0.005 xp
 		
 	*fortran
@@ -114,6 +125,7 @@ Buildings
 		req:2 xp
 		icon:https://i.imgur.com/aF8r96r.jpg
 		on tick:yield 20 data
+		text:Fortran  lv [this]
 		on tick:yield 20 money
 		passive:grant 0.005 xp
 		
@@ -126,7 +138,7 @@ Buildings
 		on tick:yield 150 data
 		on tick:yield 150 money
 		passive:grant 0.005 xp
-		
+		text:C  lv [this]
 	*cpp
 		name:C++
 		desc:The advanced version of <b>THE</b> programming language. <//>Creates <b>600 data</b> every second.
@@ -136,6 +148,17 @@ Buildings
 		on tick:yield 600 data
 		on tick:yield 600 money
 		passive:grant 0.005 xp
+		text:C++  lv [this]
+		
+	*firewall
+		name:Firewall
+		text:Firewall ([this]%)
+		desc:A huge firewall to protect your data, which will take time and effort to complete.<//><b>The firewall is [this]% complete.</b>
+		icon:icons[3,8]
+		cost:35000000 data
+		req:10 xp
+		limit:100
+		cost increase:120%
 
 Upgrades
 
