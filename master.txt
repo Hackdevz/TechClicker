@@ -197,12 +197,15 @@ Upgrades
 		
 	*perfectIII
 		name:Coding plant
-		desc:Your PC is faster and every line of code now is <b>[assembly*700] times bigger.</b>. This splendid icon is by https://raindropmemory.deviantart.com/
-		passive:multiply yield of click by (assembly*700)
+		desc:Your PC is faster and every byte now counts as <b>1.10 bytes</b>. This splendid icon is by https://raindropmemory.deviantart.com/
+		passive:multiply yield of bytes by 1.1
+		passive:multiply yield of money by 1.1
 		passive:grant 0.5 xp
 		icon:http://icons.iconarchive.com/icons/raindropmemory/down-to-earth/256/G12-Flowerpot-Plant-icon.png
 		req:3 xp
-		cost:16000 money
+		cost:160000 money
+		
+	
 		
 		
 	*assemblyI
@@ -474,6 +477,7 @@ Upgrades
 		passive:multiply yield of c by (c/2)
 		passive:grant 0.05 xp
 		req:1000000 data
+		req:5 xp
 		cost:1e8 money
 		
 	
