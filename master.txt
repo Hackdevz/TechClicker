@@ -142,7 +142,7 @@ Upgrades
 	*cProg
 		name:The C Programming Language
 		desc:include <stdio.h>, int main { printf("Let's begin") } return 0; <//> Unlocks the <b>C programming language.</b>
-		passive:grant 0.17 xp
+		passive:grant 0.1 xp
 		icon:http://icons.iconarchive.com/icons/pc-unleashed/unleashed/48/books-icon.png
 		req:5 xp
 		cost:300000 money
@@ -152,7 +152,7 @@ Upgrades
 		name:Perfect coding
 		desc:Your code works better and every line of code now is <b>2 bytes.</b>. Icon by sportsbettingspot.com
 		passive:multiply yield of click by 2
-		passive:grant 0.33 xp
+		passive:grant 0.66 xp
 		icon:http://icons.iconarchive.com/icons/sportsbettingspot/summer-olympics/48/archery-icon.png
 		req:256 data
 		cost:512 money
@@ -163,7 +163,7 @@ Upgrades
 		name:Faster coding
 		desc:Your PC is faster and every line of code now is <b>4 bytes.</b>.
 		passive:multiply yield of click by 2
-		passive:grant 0.33 xp
+		passive:grant 0.66 xp
 		icon:http://icons.iconarchive.com/icons/paomedia/small-n-flat/48/lightning-icon.png
 		req:512 data
 		cost:1024 money
@@ -173,7 +173,7 @@ Upgrades
 		name:Assembler 2.0
 		desc:Your assembler works <b>80% faster</b>. Tier: Plain
 		passive:multiply yield of assembly by 1.8
-		passive:grant 0.33 xp
+		passive:grant 0.5 xp
 		icon:cookie[4,0]
 		req:360 data
 		req:2 assembly
@@ -183,7 +183,7 @@ Upgrades
 		name:Assembler 3.0
 		desc:Your assembler works <b>90% faster</b>.  Tier: Rose
 		passive:multiply yield of assembly by 1.9
-		passive:grant 0.275 xp
+		passive:grant 0.33 xp
 		icon:cookie[4,1]
 		req:36000 data
 		req:10 assembly
@@ -273,7 +273,7 @@ Upgrades
 		name:Fortran 38
 		desc:Your fortran works <b>80% faster</b>. Tier: Plain
 		passive:multiply yield of fortran by 1.8
-		passive:grant 0.33 xp
+		passive:grant 0.66 xp
 		icon:cookie[4,0]
 		req:360 data
 		req:2 fortran
@@ -283,7 +283,7 @@ Upgrades
 		name:Fortran 44
 		desc:Your fortran works <b>90% faster</b>.  Tier: Rose
 		passive:multiply yield of fortran by 1.9
-		passive:grant 0.275 xp
+		passive:grant 0.5 xp
 		icon:cookie[4,1]
 		req:36000 data
 		req:10 fortran
