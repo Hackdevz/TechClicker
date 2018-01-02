@@ -2,7 +2,7 @@ Let's make a game!
 // And run away!
 	Name: Techlicker
 	Desc: Power up your technologies!
-	by:HackDevZ
+	by:Regian (serious version)
 	Version: Alpha
  
 Settings
@@ -55,7 +55,7 @@ Buildings
 		cost:350 money
 		icon:https://i.imgur.com/LjJ9Yit.jpg
 		on tick:yield 2 data
-		on tick:yield 0.01666667 computer
+		on tick:yield 0.0166 computer
 		on tick:yield 2 money
 		passive:grant 0.005 xp
 		
@@ -176,7 +176,7 @@ Upgrades
 				
 	*assemblyIX
 		name:Assembler X
-		desc:Your assembler works <b>100% faster</b>.   Tier: Greenie
+		desc:Your assembler works <b>100% faster</b>.   Tier: Green
 		passive:multiply yield of assembly by 2
 		passive:grant 0.07 xp
 		icon:cookie[4,18]
@@ -185,13 +185,112 @@ Upgrades
 		
 	*assemblyX
 		name: The Ultimate Assembly
-		desc:Your assembler works <b>100% faster</b>.   Tier: Moonie
+		desc:Your assembler works <b>100% faster</b>.   Tier: Final
 		passive:multiply yield of assembly by 2
 		passive:grant 0.07 xp
 		icon:cookie[4,19]
 		req:300 assembly
 		cost:4e25 money
 		
+		
+// Fortran
+	
+	*fortranI
+		name:Fortran 38
+		desc:Your assembler works <b>80% faster</b>. Tier: Plain
+		passive:multiply yield of fortran by 1.8
+		passive:grant 0.33 xp
+		icon:cookie[4,0]
+		req:360 data
+		req:2 fortran
+		cost:10000 money
+		
+	*fortranII
+		name:Fortran 44
+		desc:Your assembler works <b>90% faster</b>.  Tier: Rose
+		passive:multiply yield of fortran by 1.9
+		passive:grant 0.275 xp
+		icon:cookie[4,1]
+		req:36000 data
+		req:10 fortran
+		cost:1000000 money
+		
+	*fortranIII
+		name:Fortran 55
+		desc:Your assembler works <b>100% faster</b>.   Tier: Azure
+		passive:multiply yield of fortran by 2
+		passive:grant 0.25 xp
+		icon:cookie[4,2]
+		req:3600000 data
+		req:25 fortran
+		cost:1e9 money
+	
+	*fortranIV
+		name:Fortran 66
+		desc:Your assembler works <b>100% faster</b>.   Tier: Goldy
+		passive:multiply yield of fortran by 2
+		passive:grant 0.2 xp
+		icon:cookie[4,13]
+		req:360000000 data
+		req:50 fortran
+		cost:1e11 money
+		
+	
+	*fortranV
+		name:Fortran 77
+		desc:Your assembler works <b>100% faster</b>.   Tier: Special
+		passive:multiply yield of fortran by 2
+		passive:grant 0.12 xp
+		icon:cookie[4,14]
+		req:36000000000 data
+		req:100 fortran
+		cost:1e13 money
+	*fortranVI
+		name:Fortran 88
+		desc:Your fortran works <b>100% faster</b>.   Tier: Metal
+		passive:multiply yield of fortran by 2
+		passive:grant 0.12 xp
+		icon:cookie[4,15]
+		req:3600000000000 data
+		req:150 fortran
+		cost:1e15 money
+		
+	*fortranVII
+		name:Fortran 99
+		desc:Your fortran works <b>100% faster</b>.   Tier: Minty
+		passive:multiply yield of fortran by 2
+		passive:grant 0.07 xp
+		icon:cookie[4,16]
+		req:3600000000000000 data
+		req:200 fortran
+		cost:1e17 money
+		
+	*fortranVIII
+		name:Fortran 111
+		desc:Your fortran works <b>100% faster</b>.   Tier: Platinum
+		passive:multiply yield of fortran by 2
+		passive:grant 0.07 xp
+		icon:cookie[4,17]
+		req:225 fortran
+		cost:1e20 money
+				
+	*fortranIX
+		name:Fortran X
+		desc:Your fortran works <b>100% faster</b>.   Tier: Green
+		passive:multiply yield of fortran by 2
+		passive:grant 0.07 xp
+		icon:cookie[4,18]
+		req:250 fortran
+		cost:1e23 money
+		
+	*fortranX
+		name: The Ultimate Fortran
+		desc:Your fortran works <b>100% faster</b>.   Tier: Final
+		passive:multiply yield of fortran by 2
+		passive:grant 0.07 xp
+		icon:cookie[4,19]
+		req:300 fortran
+		cost:1e26 money
 		
 	
 		
