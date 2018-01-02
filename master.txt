@@ -60,7 +60,7 @@ Resources
 		tag:stat
 Layout
 	*main
-  		contains:res,stat, buttons
+  		contains:res, stat, buttons
   		*res
     			contains:Resources
     			class:fullWidth
