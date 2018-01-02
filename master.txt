@@ -10,7 +10,7 @@ Settings
 	building cost increase: 108%// Oh magic
 	building cost refund: 66.6%// Devilry	
 	spritesheet:cookie, 48 by 48, http://orteil.dashnet.org/cookieclicker/img/icons.png
-	stylesheet:https://raw.githubusercontent.com/Hackdevz/Techlicker/master/style.css
+	stylesheet:https://raw.githubusercontent.com/Hackdevz/Techlicker/master/style.txt
 Buttons
 	*click
 		name:Write Code
@@ -26,37 +26,37 @@ Resources
 	*data
 		name:Byte|Bytes
 		desc:Data.
-		text:Your database contains (data) bytes
+		text:Your database contains [data] bytes
 			
 	*money
 		name:Money
 		desc:With this you can buy everything.
 		start with:250
-		text:You have (money) $.
+		text:You have [money] $.
 	*xp
 		name:XP
 		start with:1
-		text: You are level (xp)
+		text: You are level [xp]------------------------------
 	
 	*computer
 		name:Computers in your net
 		desc:You can do everything with this.
 		start with:1
 		icon:http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Devices-computer-icon.png
-		tag:stat
+		
 
 		
 	*Sec
 		name:Seconds played
-		tag:stat
+		
 		
 	*Min
 		name:Minutes played
-		tag:stat
+		
 		
 	*bugsFix
 		name:Bugs fixed
-		tag:stat
+		
 	
 	
 	
