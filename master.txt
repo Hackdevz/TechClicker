@@ -50,6 +50,15 @@ Resources
 		limit:50000.
 		req:antivirus
 		req:10 xp
+		
+	*virusDe
+		name:Virus destroyed
+		text:Quarantine folder
+		desc:You destroyed [virusDe] viruses. Icon by http://bogo-d.deviantart.com
+		icon:http://icons.iconarchive.com/icons/bogo-d/project/32/Shield-Swords-icon.png
+		req:antivirus
+		req:10 xp
+		
 	
 	
 	/* *computer
@@ -147,7 +156,7 @@ Buildings
 		text:C  lv [this]
 	*cpp
 		name:C++
-		desc:The advanced version of <b>THE</b> programming language. <//>Creates <b>600 data</b> every second.
+		desc:THE advanced version of <b>THE</b> programming language. <//>Creates <b>600 data</b> every second.
 		cost:75000 money
 		req:ClassyC
 		icon:https://i.imgur.com/o1WgmFz.jpg
@@ -186,15 +195,32 @@ Upgrades
 
 	*fixBug
         name:Fix the bug
-        desc:Fix a bug with <b>[money/10]</b> money. ( It works only 90% of the time)
+        desc:Destroy a virus with <b>[75+antivirus] power</b>
         no buy
-        on click:if (money>=(money/10)) yield -(money/10) money
+        on click:if (power>=(75+antivirus)) yield -(75+antivirus) power
         on click:
-            if (money>=(money/10))
+            if (money>=(75+antivirus))
+                if (chance(50%))
+                    yield 1 virusDe
+		    yield (data/33) data
+                    toast You destroyed the virus
+                else
+                    toast Bip bup, the bug is still there 
+                end
+            end
+        end
+	
+	*remove
+        name:Fix the bug
+        desc:Fix a bug with <b>[75+antivirus]</b> money. ( It works only 90% of the time)
+        no buy
+        on click:if (power>=(75+antivirus)) yield -(75+antivirus) money
+        on click:
+            if (power>=(75+antivirus))
                 if (chance(90%))
                     yield 1 bugsFix
-		    yield (data/10) data
-                    toast You fixed the bug!
+		    yield (money/30) data
+                    toast Virus destroyed!
                 else
                     toast Bip bup, the bug is still there 
                 end
