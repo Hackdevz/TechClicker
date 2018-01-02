@@ -59,32 +59,31 @@ Resources
 		name:Bugs fixed
 		tag:stat
 Layout
-
-*main
-  contains:res, buttons
-  *res
-    contains:Resources
-    class:fullWidth
-  *stat
-   contains:tag:stat
-   header:Stats
-  *buttons
-    contains:Buttons
-*store
-  contains:buildings, upgrades
-  *buildings
-    contains:BulkDisplay, Buildings
-    header:Languages & Apps
-    tooltip origin:left
-  *upgrades
-    contains:Upgrades
-    header:Upgrade your systems
-    costs:hide
-    names:hide
-    header
-  *achievements
-   contains:Achievements
-   header:Trophies
+	*main
+  		contains:res,stat, buttons
+  		*res
+    			contains:Resources
+    			class:fullWidth
+  		*stat
+   			contains:tag:stat
+   			
+  		*buttons
+    			contains:Buttons
+	*store
+  		contains:buildings, upgrades
+  		*buildings
+    			contains:BulkDisplay, Buildings
+    			header:Languages & Apps
+    			tooltip origin:left
+  		*upgrades
+    			contains:Upgrades
+    			header:Upgrade your systems
+    			costs:hide
+    			names:hide
+    
+  		*achievements
+   			contains:Achievements
+   			header:Trophies
 	
 	
 	
