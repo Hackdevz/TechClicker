@@ -43,7 +43,7 @@ Resources
 		desc:You can do everything with this.
 		start with:1
 		icon:http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Devices-computer-icon.png
-		req:Net
+		//req:Net
 
 		
 	*Sec
