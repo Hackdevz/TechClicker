@@ -55,7 +55,7 @@ Buildings
 		cost:350 money
 		icon:https://i.imgur.com/LjJ9Yit.jpg
 		on tick:yield 2 data
-		on tick:yield 0.0166 computer
+		on tick:yield 0.0167 computer
 		on tick:yield 2 money
 		passive:grant 0.005 xp
 		
@@ -70,10 +70,29 @@ Buildings
 		on tick:yield 10 money
 		passive:grant 0.005 xp
 		
-		
+	*c
+		name:C
+		desc:<b>THE</b> programming language. With this you can create Windows. <//>Creates <b>40 data</b> every second and makes <b>a computer every 40 seconds</b>.
+		cost:1600 money
+		req:2 xp
+		icon:https://i.imgur.com/6JvYppL.jpg
+		on tick:yield 40 data
+		on tick:yield 0.025 computer
+		on tick:yield 40 money
+		passive:grant 0.005 xp
 		
 
 Upgrades
+
+	*cProg
+		name:The C Programming Language
+		desc:include <stdio.h>, int main { printf("Let's begin") } return 0; <//> Unlocks the <b>C programming language.</b>
+		passive:grant 0.17 xp
+		icon:http://icons.iconarchive.com/icons/pc-unleashed/unleashed/48/books-icon.png
+		req:5 xp
+		cost:300000 money
+		passive:multiply yield of click by 2
+	
 	*perfect
 		name:Perfect coding
 		desc:Your code works better and every line of code now is <b>2 bytes.</b>. Icon by sportsbettingspot.com
@@ -197,7 +216,7 @@ Upgrades
 	
 	*fortranI
 		name:Fortran 38
-		desc:Your assembler works <b>80% faster</b>. Tier: Plain
+		desc:Your fortran works <b>80% faster</b>. Tier: Plain
 		passive:multiply yield of fortran by 1.8
 		passive:grant 0.33 xp
 		icon:cookie[4,0]
@@ -207,7 +226,7 @@ Upgrades
 		
 	*fortranII
 		name:Fortran 44
-		desc:Your assembler works <b>90% faster</b>.  Tier: Rose
+		desc:Your fortran works <b>90% faster</b>.  Tier: Rose
 		passive:multiply yield of fortran by 1.9
 		passive:grant 0.275 xp
 		icon:cookie[4,1]
@@ -217,7 +236,7 @@ Upgrades
 		
 	*fortranIII
 		name:Fortran 55
-		desc:Your assembler works <b>100% faster</b>.   Tier: Azure
+		desc:Your fortran works <b>100% faster</b>.   Tier: Azure
 		passive:multiply yield of fortran by 2
 		passive:grant 0.25 xp
 		icon:cookie[4,2]
@@ -227,7 +246,7 @@ Upgrades
 	
 	*fortranIV
 		name:Fortran 66
-		desc:Your assembler works <b>100% faster</b>.   Tier: Goldy
+		desc:Your fortran works <b>100% faster</b>.   Tier: Goldy
 		passive:multiply yield of fortran by 2
 		passive:grant 0.2 xp
 		icon:cookie[4,13]
@@ -238,7 +257,7 @@ Upgrades
 	
 	*fortranV
 		name:Fortran 77
-		desc:Your assembler works <b>100% faster</b>.   Tier: Special
+		desc:Your fortran works <b>100% faster</b>.   Tier: Special
 		passive:multiply yield of fortran by 2
 		passive:grant 0.12 xp
 		icon:cookie[4,14]
