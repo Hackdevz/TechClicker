@@ -197,13 +197,13 @@ Upgrades
 		
 	*perfectIII
 		name:Coding plant
-		desc:Your PC is faster and every line of code now is <b>[assembly*700] times bigger.</b>.
+		desc:Your PC is faster and every line of code now is <b>[assembly*700] times bigger.</b>. This splendid icon is by https://raindropmemory.deviantart.com/
 		passive:multiply yield of click by (assembly*700)
-		passive:grant 0.33 xp
-		icon:http://icons.iconarchive.com/icons/paomedia/small-n-flat/48/lightning-icon.png
-		req:512 data
-		cost:1024 money
-		//Powers Of Two
+		passive:grant 0.5 xp
+		icon:http://icons.iconarchive.com/icons/raindropmemory/down-to-earth/256/G12-Flowerpot-Plant-icon.png
+		req:3 xp
+		cost:16000 money
+		
 		
 	*assemblyI
 		name:Assembler 2.0
@@ -411,7 +411,7 @@ Upgrades
 		req:2 c
 		cost:300000 money
 		req:5 xp
-		
+		hidden
 	*C2
 		name:GCC
 		desc:A super advanced C compilator. Works thrice as fast.  Tier: ANSI+
