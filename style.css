@@ -26,9 +26,9 @@
 }
 
 .thing.upgrade.dim.tag-.visible.notOwned {
+
     background:#6a776d;
 }
-
 .thing.upgrade.dim.tag-.visible.cantAfford.notOwned {
     background:#cf5055;
 }
@@ -57,12 +57,13 @@
     right:100%;
     height:25%;
     top:75%;
-    width:150%;
+    width:100%;
     background:rgba(0,0,0,0.5);
     z-index:0;
     justify-content:space-between;
 }
    
+
 #box-buttons
 {
 	top:0px;
