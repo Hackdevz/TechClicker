@@ -202,6 +202,7 @@ Upgrades
 
 	*fixBug
         name:Fix the bug
+	req:5 xp
         desc:Destroy a virus with <b>[75+antivirus] power</b>
         no buy
         on click:if (power>=(75+antivirus)) yield -(75+antivirus) power
@@ -222,7 +223,9 @@ Upgrades
         desc:Destroy a virus with <b>[75+antivirus]</b> money. ( It works only 90% of the time)
         no buy
         on click:if (power>=(75+antivirus)) yield -(75+antivirus) money
-	icon:http://icons.iconarchive.com/icons/aha-soft/torrent/256/virus-icon.png
+	icon:http://icons.iconarchive.com/icons/aha-soft/torrent/48/virus-icon.png
+	req:10 xp
+	req:1 antivirus
         on click:
             if (power>=(75+antivirus))
                 if (chance(90%))
@@ -240,6 +243,7 @@ Upgrades
         name:Destroy the Vault.
         desc:Destroy the Vault. You will get [security] bytes, but you have to pay [data:earned/25] money. This works only 75% of the time.
         no buy
+	req:12 xp
         on click:if (money>=(data:earned/25)) yield -(data:earned/25) money
 	icon:http://icons.iconarchive.com/icons/simiographics/secure/48/Key-icon.png
         on click:
@@ -521,7 +525,7 @@ Upgrades
 		req:2 cpp
 		cost:8e6 money
 		req:5 xp
-		hidden
+		
 	*Cp2
 		name:GCC++
 		desc:A super advanced C++ compilator. Works thrice as fast.  Tier: ANSI+
@@ -596,7 +600,7 @@ Upgrades
 		req:2 c
 		cost:300000 money
 		req:5 xp
-		hidden
+		
 	*C2
 		name:GCC
 		desc:A super advanced C compilator. Works thrice as fast.  Tier: ANSI+
