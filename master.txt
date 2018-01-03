@@ -507,10 +507,15 @@ Upgrades
 		req:300 fortran
 		cost:1e26 money
 		
+		
+		//https://i.imgur.com/o1WgmFz.jpg C++
+		//https://i.imgur.com/6JvYppL.jpg C
+		
+		
 	*Cp1
 		name:Ansi C++
 		desc:An advanced C compilator. Works twice as fast.  Tier: ANSI
-		icon:https://i.imgur.com/6JvYppL.jpg
+		icon:https://i.imgur.com/o1WgmFz.jpg
 		passive:multiply yield of cpp by 2
 		passive:grant 0.05 xp
 		req:2 cpp
@@ -520,7 +525,7 @@ Upgrades
 	*Cp2
 		name:GCC++
 		desc:A super advanced C++ compilator. Works thrice as fast.  Tier: ANSI+
-		icon:https://i.imgur.com/6JvYppL.jpg
+		icon:https://i.imgur.com/o1WgmFz.jpg
 		passive:multiply yield of cpp by 3
 		passive:grant 0.05 xp
 		req:10 cpp
@@ -529,7 +534,7 @@ Upgrades
 	*Cp3
 		name:TCC++
 		desc:An hyper-advanced C++ compilator. Works fourice as fast.  Tier: ANSI++
-		icon:https://i.imgur.com/6JvYppL.jpg
+		icon:https://i.imgur.com/o1WgmFz.jpg
 		passive:multiply yield of cpp by 4
 		passive:grant 0.05 xp
 		req:25 cpp
@@ -538,7 +543,7 @@ Upgrades
 	*Cp4
 		name:SubatomiC++
 		desc:An atomic C++ compilator. Works fivice as fast.  Tier: Atomic
-		icon:https://i.imgur.com/6JvYppL.jpg
+		icon:https://i.imgur.com/o1WgmFz.jpg
 		passive:multiply yield of cpp by 5
 		passive:grant 0.05 xp
 		req:50 cpp
@@ -547,7 +552,7 @@ Upgrades
 	*Cp5
 		name:Revolver C++
 		desc:The newest C++ compilator. Works ten times as fast.  Tier: Revolver
-		icon:https://i.imgur.com/6JvYppL.jpg
+		icon:https://i.imgur.com/o1WgmFz.jpg
 		passive:multiply yield of cpp by 10
 		passive:grant 0.05 xp
 		req:100 cpp
@@ -557,7 +562,7 @@ Upgrades
 	*Cp6
 		name:Explosive-C++
 		desc:The BOOM C++ compilator. Works eleven times as fast.  Tier: Explosive
-		icon:https://i.imgur.com/6JvYppL.jpg
+		icon:https://i.imgur.com/o1WgmFz.jpg
 		passive:multiply yield of cpp by 11
 		passive:grant 0.05 xp
 		req:150 cpp
@@ -566,7 +571,7 @@ Upgrades
 	*Cp7
 		name:Dark-C++
 		desc:The darkest C++ compilator. Works 20 times as fast.  Tier: Dark
-		icon:https://i.imgur.com/6JvYppL.jpg
+		icon:https://i.imgur.com/o1WgmFz.jpg
 		passive:multiply yield of cpp by 20
 		passive:grant 0.05 xp
 		req:200 cpp
@@ -574,18 +579,18 @@ Upgrades
 	
 	*CpX
 		name:X++
-		desc:The C-est compilator.
-		icon:https://i.imgur.com/6JvYppL.jpg
+		desc:The C++est compilator.
+		icon:https://i.imgur.com/o1WgmFz.jpg
 		passive:multiply yield of cpp by (cpp/2)
 		passive:grant 0.05 xp
 		req:1000000 data
 		req:5 xp
-		cost:1e8 money
+		cost:1e10 money
 		
 	*C1
 		name:Ansi C
 		desc:An advanced C compilator. Works twice as fast.  Tier: ANSI
-		icon:https://i.imgur.com/o1WgmFz.jpg
+		icon:https://i.imgur.com/6JvYppL.jpg 
 		passive:multiply yield of c by 2
 		passive:grant 0.05 xp
 		req:2 c
@@ -595,7 +600,7 @@ Upgrades
 	*C2
 		name:GCC
 		desc:A super advanced C compilator. Works thrice as fast.  Tier: ANSI+
-		icon:https://i.imgur.com/o1WgmFz.jpg
+		icon:https://i.imgur.com/6JvYppL.jpg 
 		passive:multiply yield of c by 3
 		passive:grant 0.05 xp
 		req:10 c
@@ -604,7 +609,7 @@ Upgrades
 	*C3
 		name:TCC
 		desc:An hyper-advanced C compilator. Works fourice as fast.  Tier: ANSI++
-		icon:https://i.imgur.com/o1WgmFz.jpg
+		icon:https://i.imgur.com/6JvYppL.jpg 
 		passive:multiply yield of c by 4
 		passive:grant 0.05 xp
 		req:25 c
@@ -613,7 +618,7 @@ Upgrades
 	*C4
 		name:Atomic-C
 		desc:An atomic C compilator. Works fivice as fast.  Tier: Atomic
-		icon:https://i.imgur.com/o1WgmFz.jpg
+		icon:https://i.imgur.com/6JvYppL.jpg 
 		passive:multiply yield of c by 5
 		passive:grant 0.05 xp
 		req:50 c
@@ -622,7 +627,7 @@ Upgrades
 	*C5
 		name:Revolver C
 		desc:The newest C compilator. Works ten times as fast.  Tier: Revolver
-		icon:https://i.imgur.com/o1WgmFz.jpg
+		icon:https://i.imgur.com/6JvYppL.jpg 
 		passive:multiply yield of c by 10
 		passive:grant 0.05 xp
 		req:100 c
@@ -632,7 +637,7 @@ Upgrades
 	*C6
 		name:Explosive-C (C4)
 		desc:The BOOM C compilator. Works eleven times as fast.  Tier: Explosive
-		icon:https://i.imgur.com/o1WgmFz.jpg
+		icon:https://i.imgur.com/6JvYppL.jpg 
 		passive:multiply yield of c by 11
 		passive:grant 0.05 xp
 		req:150 c
@@ -641,7 +646,7 @@ Upgrades
 	*C7
 		name:Dark-C
 		desc:The darkest C compilator. Works 20 times as fast.  Tier: Dark
-		icon:https://i.imgur.com/o1WgmFz.jpg
+		icon:https://i.imgur.com/6JvYppL.jpg 
 		passive:multiply yield of c by 20
 		passive:grant 0.05 xp
 		req:200 c
@@ -650,7 +655,7 @@ Upgrades
 	*CX
 		name:C-X
 		desc:The C-est compilator.
-		icon:https://i.imgur.com/o1WgmFz.jpg
+		icon:https://i.imgur.com/6JvYppL.jpg 
 		passive:multiply yield of c by (c/2)
 		passive:grant 0.05 xp
 		req:1000000 data
