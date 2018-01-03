@@ -46,8 +46,8 @@ Resources
 	*power
 		name:Antivirus power
 		text:Antivirus
-		desc:Anti-virus power: [power]<//>In this game, You destroyed [virusDe] viruses. <//>Icon by http://bogo-d.deviantart.com	
-		icon:http://icons.iconarchive.com/icons/bogo-d/project/32/Shield-Swords-icon.png//icons.iconarchive.com/icons/bogo-d/project/32/Shield-Swords-icon.png
+		desc:Anti-virus power: [power]<//>In this game, You destroyed [virusDe] viruses. <//>
+		icon:http://icons.iconarchive.com/icons/paomedia/small-n-flat/48/shield-icon.png
 		req:antivirus
 		req:10 xp
 		
@@ -60,6 +60,8 @@ Resources
 		desc:You have [security] bytes locked here in the Vault. All this data can be destroyed with [data/25] money.
 		icon:http://icons.iconarchive.com/icons/simiographics/secure/48/PadLock-icon.png
 		req:12 xp
+		req:100 vault
+		text:Vault
 	
 	
 	/*    INTERNET STUFF
@@ -184,6 +186,20 @@ Buildings
 		on tick:yield 800 data
 		on tick:yield 100000 security
 		cost increase:120%
+		
+		
+	*vault
+		name:Vault
+		text:Vault ([this]%)
+		desc:A super secure system.<//><b>The vault is [this]% complete.</b>
+		icon:http://icons.iconarchive.com/icons/simiographics/secure/48/PadLock-icon.png
+		cost:700000 money
+		req:10 xp
+		limit:100%
+		on tick:yield 800 money
+		on tick:yield 800 data
+		on tick:yield 100000 security
+		cost increase:101%
 		
 		
 	*antivirus
