@@ -194,7 +194,7 @@ Buildings
 		desc:A super secure system.<//><b>The vault is [this]% complete.</b>
 		icon:http://icons.iconarchive.com/icons/simiographics/secure/48/PadLock-icon.png
 		cost:700000 money
-		req:10 xp
+		req:12 xp
 		limit:100%
 		on tick:yield 800 money
 		on tick:yield 800 data
