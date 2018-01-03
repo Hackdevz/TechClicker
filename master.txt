@@ -553,7 +553,7 @@ Upgrades
 		passive:grant 0.05 xp
 		req:2 cpp
 		cost:8e6 money
-		visible
+		shown
 		
 	*Cp2
 		name:GCC++
@@ -629,7 +629,7 @@ Upgrades
 		req:2 c
 		cost:300000 money
 		req:5 xp
-		visible
+		shown
 		
 	*C2
 		name:GCC
