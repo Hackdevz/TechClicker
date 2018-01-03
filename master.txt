@@ -696,7 +696,115 @@ Upgrades
 		req:5 xp
 		cost:1e8 money
 		
+	*WinI
+		name:Windows 1
+		desc:The first Windows version.
+		icon:cookie[0,0]
+		passive:multiply yield of windows by 2
+		passive:grant 0.05 xp
+		req:9 xp
+		cost:1e9 money
+		
+	*WinII
+		name:Windows 2
+		desc:The second Windows version.
+		icon:cookie[0,1]
+		passive:multiply yield of windows by 2
+		passive:grant 0.05 xp
+		req:11 xp
+		cost:1e10 money
+		
+	*WinIII
+		name:Windows 95
+		desc:Windows released in 1995.
+		icon:cookie[0,2]
+		passive:multiply yield of windows by 10
+		passive:grant 0.05 xp
+		req:13 xp
+		cost:1e11 money
+		
+		
+	*WinIV
+		name:Windows 98
+		desc:Windows released in 1998.
+		icon:cookie[0,13]
+		passive:multiply yield of windows by 10
+		passive:grant 0.05 xp
+		req:15 xp
+		cost:1e11 money
+		
+		
+	*WinV
+		name:Windows ME
+		desc:The new Windows.
+		icon:cookie[0,14]
+		passive:multiply yield of windows by 10
+		passive:grant 0.05 xp
+		req:16 xp
+		cost:1e12 money
+		
+	*WinVI
+		name:Windows NT
+		desc:The worst Windows.
+		icon:cookie[0,15]
+		passive:multiply yield of windows by 10
+		passive:grant 0.05 xp
+		req:18 xp
+		cost:1e14 money
+		
+	*WinVII
+		name:Windows XP
+		desc:The best Windows.
+		icon:cookie[0,16]
+		passive:multiply yield of windows by 10
+		passive:grant 0.05 xp
+		req:20 xp
+		cost:1e15 money
+		
+	*WinVIII
+		name:Windows XP
+		desc:A better Windows.
+		icon:cookie[0,17]
+		passive:multiply yield of windows by 10
+		passive:grant 0.05 xp
+		req:22 xp
+		cost:1e17 money
+		
+	*WinIX
+		name:Windows Vista
+		desc:A very bad Windows.
+		icon:cookie[0,18]
+		passive:multiply yield of windows by 10
+		passive:grant 0.05 xp
+		req:24 xp
+		cost:1e19 money
+		
+	*WinX
+		name:Windows 7
+		desc:A very good Windows.
+		icon:cookie[0,19]
+		passive:multiply yield of windows by 10
+		passive:grant 0.05 xp
+		req:26 xp
+		cost:1e20 money
+		
+	*WinXI
+		name:Windows 8
+		desc:A better Windows.
+		icon:cookie[0,20]
+		passive:multiply yield of windows by 10
+		passive:grant 0.05 xp
+		req:27 xp
+		cost:1e21 money
 	
+	*WinXII
+		name:Windows 10
+		desc:Perfectware.
+		icon:cookie[0,21]
+		passive:multiply yield of windows by 10
+		passive:grant 0.05 xp
+		req:30 xp
+		cost:1e22 money
 
 	
 		
