@@ -249,14 +249,14 @@ Upgrades
 	
 	*remove
         name:Destroy a virus
-        desc:Destroy a virus with <b>[75+[antivirus*50]]</b> power.
+        desc:Destroy a virus with <b>[75+antivirus*50]</b> power.
         no buy
-        on click:if (power>=(75+(antivirus*50))) yield -(75+(antivirus*50)) money
+        on click:if (power>=(75+antivirus*50)) yield -(75+antivirus*50) money
 	icon:http://icons.iconarchive.com/icons/aha-soft/torrent/48/virus-icon.png
 	req:10 xp
 	req:1 antivirus
         on click:
-            if (power>=(75+(antivirus*50)))
+            if (power>=(75+antivirus*50))
                 if (chance(90%))
                     yield 1 virusDe
 		    yield (money/(power*1000*virusDe)) data
