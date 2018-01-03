@@ -214,6 +214,17 @@ Buildings
 		on tick:yield 500 data
 		on tick:yield 500 money
 		
+	*windows
+		name:Windows
+		text:Windows ([this]%)
+		desc:The goodest operating system, made with C and C++.<//><b>Windows is [this]% complete.</b><b>Windows makes 16000 bytes every second.</b>
+		icon:http://icons.iconarchive.com/icons/simiographics/secure/48/PadLock-icon.png
+		cost:36000 data
+		req:9 xp
+		limit:100%
+		on tick:yield 16000 money
+		on tick:yield 16000 data
+		cost increase:155%
 
 
 Upgrades
@@ -221,15 +232,15 @@ Upgrades
 	*fixBug
         name:Fix the bug
 	req:5 xp
-        desc:Destroy a virus with <b>[75+antivirus] power</b>
+        desc:Fix a bug with <b>[money/10] money</b>
         no buy
-        on click:if (power>=(75+antivirus)) yield -(75+antivirus) power
+        on click:if (money>=(money/10)) yield -(money/10) money
         on click:
-            if (money>=(75+antivirus))
-                if (chance(50%))
-                    yield 1 virusDe
-		    yield (data/33) data
-                    toast You destroyed the virus
+            if (money>=(money/10))
+                if (chance(70%))
+                    yield 1 bugsFix
+		    yield ((data/10)/(bugsFix)) data
+                    toast You destroyed the bug.
                 else
                     toast Bip bup, the bug is still there 
                 end
@@ -542,7 +553,7 @@ Upgrades
 		passive:grant 0.05 xp
 		req:2 cpp
 		cost:8e6 money
-		req:5 xp
+		visible
 		
 	*Cp2
 		name:GCC++
@@ -618,6 +629,7 @@ Upgrades
 		req:2 c
 		cost:300000 money
 		req:5 xp
+		visible
 		
 	*C2
 		name:GCC
