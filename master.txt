@@ -55,6 +55,12 @@ Resources
 		always hidden
 		name:Virus destroyed
 	
+	*security
+		name:Security
+		desc:You have [security] bytes locked here in the Vault. All this data can be destroyed with [data/75] money.
+		icon:http://icons.iconarchive.com/icons/simiographics/secure/48/PadLock-icon.png
+	
+	
 	/* *computer
 		name:Computers in your net
 		desc:You can do everything with this.
@@ -81,6 +87,10 @@ Resources
 		icon:http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Actions-dialog-close-icon.png
 		tag:stat
 		desc:All the bugs fixed
+		
+		
+		
+		
 	
 		
 Layout
@@ -119,7 +129,7 @@ Buildings
 	*assembly
 		name:Assembly language
 		desc:The first official programming language.<//>Creates <b>5 data</b> every second.
-		cost:350 money
+		cost:350 data
 		icon:https://i.imgur.com/LjJ9Yit.jpg
 		on tick:yield 5 data
 		on tick:yield 5 money
@@ -129,7 +139,7 @@ Buildings
 	*fortran
 		name:Fortran language
 		desc:A programming language for maths.<//>Creates <b>20 data</b> every seconds.
-		cost:1600 money
+		cost:1600 data
 		req:2 xp
 		icon:https://i.imgur.com/aF8r96r.jpg
 		on tick:yield 20 data
@@ -140,7 +150,7 @@ Buildings
 	*c
 		name:C
 		desc:<b>THE</b> programming language. With this you can create Windows. <//>Creates <b>150 data</b> every second.
-		cost:8000 money
+		cost:8000 data
 		req:cProg
 		icon:https://i.imgur.com/6JvYppL.jpg
 		on tick:yield 150 data
@@ -150,13 +160,15 @@ Buildings
 	*cpp
 		name:C++
 		desc:THE advanced version of <b>THE</b> programming language. <//>Creates <b>600 data</b> every second.
-		cost:75000 money
+		cost:75000 data
 		req:ClassyC
 		icon:https://i.imgur.com/o1WgmFz.jpg
 		on tick:yield 600 data
 		on tick:yield 600 money
 		passive:grant 0.005 xp
 		text:C++  lv [this]
+		
+	
 		
 	*firewall
 		name:Firewall
@@ -168,7 +180,7 @@ Buildings
 		limit:100%
 		on tick:yield 800 money
 		on tick:yield 800 data
-		on tick:yield 1 security
+		on tick:yield 100000 security
 		cost increase:120%
 		
 		
@@ -177,10 +189,12 @@ Buildings
 		text:Antivirus Tower lv  [this]
 		desc:Unlocks the <b>destroy virus</b> ability .<//><b>Produces [this] power every second.</b>Max level is 500
 		icon:http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Status-security-high-icon.png
-		cost:1000000 money
+		cost:1000000 data
 		req:10 xp
 		limit:500
-		on tick:yield 1 power		
+		on tick:yield 1 power	
+		on tick:yield 500 data
+		on tick:yield 500 money
 		
 
 
@@ -212,7 +226,7 @@ Upgrades
         on click:
             if (power>=(75+antivirus))
                 if (chance(90%))
-                    yield 1 bugsFix
+                    yield 1 virusDe
 		    yield (money/30) data
                     toast Virus destroyed!
                 else
@@ -220,7 +234,26 @@ Upgrades
                 end
             end
         end
-
+	
+	
+	*unlock
+        name:Destroy the Vault.
+        desc:Destroy the Vault. You will get [security] bytes, but you have to pay [data:earned/25] money. This works only 75% of the time.
+        no buy
+        on click:if (money>=(data:earned/25)) yield -(data:earned/25) money
+	icon:http://icons.iconarchive.com/icons/simiographics/secure/48/Key-icon.png
+        on click:
+            if (money=(data:earned/25))
+                if (chance(75%))
+		    yield (security) data
+                    yield 1 bugsFix
+		    yield (money/30) data
+                    toast The Vault unlocked. 
+                else
+                    toast The Vault is <b>very hard to break</b>. Try again
+                end
+            end
+        end
 
 	*ClassyC
 		name:C with Classes
