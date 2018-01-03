@@ -218,7 +218,7 @@ Buildings
 		name:Windows
 		text:Windows ([this]%)
 		desc:The goodest operating system, made with C and C++.<//><b>Windows is [this]% complete.</b><b>Windows makes 16000 bytes every second.</b>
-		icon:http://icons.iconarchive.com/icons/simiographics/secure/48/PadLock-icon.png
+		icon:http://icons.iconarchive.com/icons/position-relative/social-2/48/windows-icon.png
 		cost:36000 data
 		req:9 xp
 		limit:100%
