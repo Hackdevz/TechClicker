@@ -41,25 +41,19 @@ Resources
 		start with:1
 		text:XP
 		icon:http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Actions-rating-icon.png
-		limit:100
+		
 		
 	*power
 		name:Antivirus power
-		text:Anti-virus power: [power] 
-		desc:Max power is 50000.
-		limit:50000.
+		text:Antivirus
+		desc:Anti-virus power: [power]<//>In this game, You destroyed [virusDe] viruses. <//>Icon by http://bogo-d.deviantart.com	
+		icon:http://icons.iconarchive.com/icons/bogo-d/project/32/Shield-Swords-icon.png//icons.iconarchive.com/icons/bogo-d/project/32/Shield-Swords-icon.png
 		req:antivirus
 		req:10 xp
 		
 	*virusDe
+		always hidden
 		name:Virus destroyed
-		text:Quarantine folder
-		desc:You destroyed [virusDe] viruses. Icon by http://bogo-d.deviantart.com
-		icon:http://icons.iconarchive.com/icons/bogo-d/project/32/Shield-Swords-icon.png
-		req:antivirus
-		req:10 xp
-		
-	
 	
 	/* *computer
 		name:Computers in your net
@@ -211,10 +205,11 @@ Upgrades
         end
 	
 	*remove
-        name:Fix the bug
-        desc:Fix a bug with <b>[75+antivirus]</b> money. ( It works only 90% of the time)
+        name:Destroy a virus
+        desc:Destroy a virus with <b>[75+antivirus]</b> money. ( It works only 90% of the time)
         no buy
         on click:if (power>=(75+antivirus)) yield -(75+antivirus) money
+	icon:http://icons.iconarchive.com/icons/aha-soft/torrent/256/virus-icon.png
         on click:
             if (power>=(75+antivirus))
                 if (chance(90%))
@@ -222,7 +217,7 @@ Upgrades
 		    yield (money/30) data
                     toast Virus destroyed!
                 else
-                    toast Bip bup, the bug is still there 
+                    toast The virus won't go away. Try again!
                 end
             end
         end
@@ -230,7 +225,7 @@ Upgrades
 
 	*ClassyC
 		name:C with Classes
-		desc:int main () { std::cout << " Hello! "; std::cout << " Power Up My C "; } <//> Unlocks the <b>C++ programming language.</b>
+		desc:int main () { std::cout << " Hey! "; std::cout << " Power Up My C "; } <//> Unlocks the <b>C++ programming language.</b>
 		passive:grant 0.1 xp
 		icon:http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Actions-address-book-new-icon.png
 		req:7 xp
