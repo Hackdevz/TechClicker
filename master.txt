@@ -57,11 +57,13 @@ Resources
 	
 	*security
 		name:Security
-		desc:You have [security] bytes locked here in the Vault. All this data can be destroyed with [data/75] money.
+		desc:You have [security] bytes locked here in the Vault. All this data can be destroyed with [data/25] money.
 		icon:http://icons.iconarchive.com/icons/simiographics/secure/48/PadLock-icon.png
+		req:12 xp
 	
 	
-	/* *computer
+	/*    INTERNET STUFF
+	*computer
 		name:Computers in your net
 		desc:You can do everything with this.
 		start with:1
