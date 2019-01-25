@@ -132,17 +132,19 @@ Buildings
 	
 	*cpu 
 		name:CPU
-		desc:It's your PC's brain. Upgrading it will make it faster and faster.<//>Creates <b>5 data</b> every second.
+		desc:It's your PC's brain. Upgrading it will make it faster and faster.<//>Creates <b>5 data</b> every second.<//><b>Having enough CPU cores can unlock some special upgrades.</b>
 		cost:200 money
 		on tick:yield 5 data
+		cost increase:200%
 		text:CPU core count: [cpu]
 		passive:grant 0.005 xp
 		
 	*ram
 		name:RAM
-		desc:Random Access Memory. It will make your code run faster.<//>Creates <b>20 data</b> every second.
+		desc:Random Access Memory. It will make your code run faster.<//>Creates <b>20 data</b> every second.<//><b>Having enough RAM can unlock more operating systems.</b>
 		cost:50 money
 		on tick:yield 20 data
+		cost increase:101%
 		text:RAM: [this] MB
 		passive:grant 0.005 xp
 		
@@ -391,7 +393,7 @@ Upgrades
 		passive:grant 0.25 xp
 		icon:cookie[4,2]
 		req:3600000 data
-		req:25 assembly
+		req:50 assembly
 		cost:40000000 money
 	
 	*assemblyIV
@@ -401,7 +403,7 @@ Upgrades
 		passive:grant 0.2 xp
 		icon:cookie[4,13]
 		req:360000000 data
-		req:50 assembly
+		req:100 assembly
 		cost:4000000000 money
 		
 	
@@ -412,7 +414,7 @@ Upgrades
 		passive:grant 0.12 xp
 		icon:cookie[4,14]
 		req:36000000000 data
-		req:100 assembly
+		req:200 assembly
 		cost:400000000000 money
 	*assemblyVI
 		name:Assembler 7.0
@@ -421,7 +423,7 @@ Upgrades
 		passive:grant 0.12 xp
 		icon:cookie[4,15]
 		req:3600000000000 data
-		req:150 assembly
+		req:300 assembly
 		cost:400000000000000 money
 		
 	*assemblyVII
@@ -431,7 +433,7 @@ Upgrades
 		passive:grant 0.07 xp
 		icon:cookie[4,16]
 		req:3600000000000000 data
-		req:200 assembly
+		req:400 assembly
 		cost:400000000000000000 money
 		
 	*assemblyVIII
@@ -440,7 +442,7 @@ Upgrades
 		passive:multiply yield of assembly by 2
 		passive:grant 0.07 xp
 		icon:cookie[4,17]
-		req:225 assembly
+		req:500 assembly
 		cost:4e19 money
 				
 	*assemblyIX
@@ -449,7 +451,7 @@ Upgrades
 		passive:multiply yield of assembly by 2
 		passive:grant 0.07 xp
 		icon:cookie[4,18]
-		req:250 assembly
+		req:600 assembly
 		cost:4e22 money
 		
 	*assemblyX
@@ -458,7 +460,7 @@ Upgrades
 		passive:multiply yield of assembly by 2
 		passive:grant 0.07 xp
 		icon:cookie[4,19]
-		req:300 assembly
+		req:700 assembly
 		cost:4e25 money
 		
 		
@@ -491,7 +493,7 @@ Upgrades
 		passive:grant 0.25 xp
 		icon:cookie[4,2]
 		req:3600000 data
-		req:25 fortran
+		req:50 fortran
 		cost:1e8 money
 	
 	*fortranIV
@@ -501,7 +503,7 @@ Upgrades
 		passive:grant 0.2 xp
 		icon:cookie[4,13]
 		req:360000000 data
-		req:50 fortran
+		req:100 fortran
 		cost:1e11 money
 		
 	
@@ -512,7 +514,7 @@ Upgrades
 		passive:grant 0.12 xp
 		icon:cookie[4,14]
 		req:36000000000 data
-		req:100 fortran
+		req:200 fortran
 		cost:1e13 money
 	*fortranVI
 		name:Fortran 88
@@ -521,7 +523,7 @@ Upgrades
 		passive:grant 0.12 xp
 		icon:cookie[4,15]
 		req:3600000000000 data
-		req:150 fortran
+		req:300 fortran
 		cost:1e15 money
 		
 	*fortranVII
@@ -531,7 +533,7 @@ Upgrades
 		passive:grant 0.07 xp
 		icon:cookie[4,16]
 		req:3600000000000000 data
-		req:200 fortran
+		req:400 fortran
 		cost:1e17 money
 		
 	*fortranVIII
@@ -540,7 +542,7 @@ Upgrades
 		passive:multiply yield of fortran by 2
 		passive:grant 0.07 xp
 		icon:cookie[4,17]
-		req:225 fortran
+		req:500 fortran
 		cost:1e20 money
 				
 	*fortranIX
@@ -549,7 +551,7 @@ Upgrades
 		passive:multiply yield of fortran by 2
 		passive:grant 0.07 xp
 		icon:cookie[4,18]
-		req:250 fortran
+		req:600 fortran
 		cost:1e23 money
 		
 	*fortranX
@@ -558,7 +560,7 @@ Upgrades
 		passive:multiply yield of fortran by 2
 		passive:grant 0.07 xp
 		icon:cookie[4,19]
-		req:300 fortran
+		req:700 fortran
 		cost:1e26 money
 		
 		
@@ -591,7 +593,7 @@ Upgrades
 		icon:https://i.imgur.com/o1WgmFz.jpg
 		passive:multiply yield of cpp by 4
 		passive:grant 0.05 xp
-		req:25 cpp
+		req:50 cpp
 		cost:8e10 money
 		
 	*Cp4
@@ -600,7 +602,7 @@ Upgrades
 		icon:https://i.imgur.com/o1WgmFz.jpg
 		passive:multiply yield of cpp by 5
 		passive:grant 0.05 xp
-		req:50 cpp
+		req:100 cpp
 		cost:8e12 money
 	
 	*Cp5
@@ -609,7 +611,7 @@ Upgrades
 		icon:https://i.imgur.com/o1WgmFz.jpg
 		passive:multiply yield of cpp by 10
 		passive:grant 0.05 xp
-		req:100 cpp
+		req:200 cpp
 		cost:8e15 money
 		
 		
@@ -619,7 +621,7 @@ Upgrades
 		icon:https://i.imgur.com/o1WgmFz.jpg
 		passive:multiply yield of cpp by 11
 		passive:grant 0.05 xp
-		req:150 cpp
+		req:300 cpp
 		cost:8e18 money
 		
 	*Cp7
@@ -628,7 +630,7 @@ Upgrades
 		icon:https://i.imgur.com/o1WgmFz.jpg
 		passive:multiply yield of cpp by 20
 		passive:grant 0.05 xp
-		req:200 cpp
+		req:400 cpp
 		cost:8e21 money
 	
 	*CpX
@@ -638,7 +640,7 @@ Upgrades
 		passive:multiply yield of cpp by (cpp/2)
 		passive:grant 0.05 xp
 		req:1000000 data
-		req:5 xp
+		req:96 xp
 		cost:8e30 money
 		
 	*C1
@@ -667,68 +669,63 @@ Upgrades
 		icon:https://i.imgur.com/6JvYppL.jpg 
 		passive:multiply yield of c by 4
 		passive:grant 0.05 xp
-		req:25 c
+		req:50 c
 		cost:3e9 money
 		
 	*C4
 		name:Atomic
-		desc:An atomic C compilator. Works 5x as fast.  Tier: Atomic
+		desc:Uses atoms at the Large Hadron Collider to compute C code. Works 5x as fast.  Tier: Atomic
 		icon:https://i.imgur.com/6JvYppL.jpg 
 		passive:multiply yield of c by 5
 		passive:grant 0.05 xp
-		req:50 c
+		req:100 c
 		cost:3e11 money
 	
 	*C5
 		name:A piece of TNT that got hacked into a C compilator.
-		desc:BOOM?
+		desc:
 		icon:https://i.imgur.com/6JvYppL.jpg 
 		passive:multiply yield of c by 10
 		passive:grant 0.05 xp
-		req:100 c
+		req:200 c
 		cost:3.14159265e14 money
 		//PI
 		
 	*C6
 		name:C4
-		desc:Way too many carbon atoms.  Tier: Explosive
+		desc:Collides carbon atoms to compile C code.  Tier: Explosive
 		icon:https://i.imgur.com/6JvYppL.jpg 
 		passive:multiply yield of c by 11
 		passive:grant 0.05 xp
-		req:150 c
+		req:300 c
 		cost:3e17 money
-		
-	*C7
-		name:Hypercomputer
-		desc:
-		icon:https://i.imgur.com/6JvYppL.jpg 
-		passive:multiply yield of c by 20
-		passive:grant 0.05 xp
-		req:200 c
-		cost:3e20 money
+	
 	
 		
 	*WinI
-		name:Windows 1
-		desc:The first Windows version.
+		name:Windows 1.0
+		desc:The first Windows version. Only needs a few MB's of RAM, but hey!
 		icon:cookie[0,0]
 		passive:multiply yield of windows by 2
 		passive:grant 0.05 xp
+		req:5 ram
 		req:9 xp
 		cost:1e9 money
 		
 	*WinII
-		name:Windows 2
-		desc:The second Windows version.
+		name:Windows 2.0
+		desc:The second Windows version. It needs more RAM than Windows 1.0.
 		icon:cookie[0,1]
 		passive:multiply yield of windows by 2
 		passive:grant 0.05 xp
+		req:25 ram
 		req:11 xp
 		cost:1e10 money
 		
 	*WinIII
 		name:Windows 95
-		desc:Windows released in 1995.
+		desc:This piece of software got released in 1995.
+		req:100 ram
 		icon:cookie[0,2]
 		passive:multiply yield of windows by 10
 		passive:grant 0.05 xp
@@ -738,7 +735,8 @@ Upgrades
 		
 	*WinIV
 		name:Windows 98
-		desc:Windows released in 1998.
+		desc:This system likes to bluescreen a lot.
+		req:250 ram
 		icon:cookie[0,13]
 		passive:multiply yield of windows by 10
 		passive:grant 0.05 xp
@@ -748,7 +746,8 @@ Upgrades
 		
 	*WinV
 		name:Windows ME
-		desc:The new Windows.
+		desc:This version is not good... but has cool features for developers. You might want to try it out.
+		req:500 ram
 		icon:cookie[0,14]
 		passive:multiply yield of windows by 10
 		passive:grant 0.05 xp
@@ -757,9 +756,10 @@ Upgrades
 		
 	*WinVI
 		name:Windows NT
-		desc:The worst Windows.
+		desc:Having a NT copy on hand can unlock some serious server upgrades later.
 		icon:cookie[0,15]
 		passive:multiply yield of windows by 10
+		req:1000 ram
 		passive:grant 0.05 xp
 		req:18 xp
 		cost:1e14 money
@@ -768,14 +768,17 @@ Upgrades
 		name:Windows XP
 		desc:The best Windows.
 		icon:cookie[0,16]
+		req:1500 ram
 		passive:multiply yield of windows by 10
 		passive:grant 0.05 xp
 		req:20 xp
 		cost:1e15 money
 		
 	*WinVIII
-		name:Windows XP
-		desc:A better Windows.
+		name:Windows Server
+		desc:You can use this on a server. If you proceed in the game, you can unlock a server.
+		req:2000 ram
+		req:WinVI
 		icon:cookie[0,17]
 		passive:multiply yield of windows by 10
 		passive:grant 0.05 xp
@@ -784,7 +787,8 @@ Upgrades
 		
 	*WinIX
 		name:Windows Vista
-		desc:A very bad Windows.
+		desc:A very bad Windows. But hey, it's got some neat stuff in it.
+		req:2500 ram
 		icon:cookie[0,18]
 		passive:multiply yield of windows by 10
 		passive:grant 0.05 xp
@@ -793,7 +797,8 @@ Upgrades
 		
 	*WinX
 		name:Windows 7
-		desc:
+		desc:This is the Windows you wanted. But beware, you need a lot of RAM to make it work.
+		req:4000 ram
 		icon:cookie[0,19]
 		passive:multiply yield of windows by 10
 		passive:grant 0.05 xp
@@ -802,8 +807,9 @@ Upgrades
 		
 	*WinXI
 		name:Windows 8
-		desc:
+		desc:A totally-not-good operating system, but you need it to unlock Windows 10.
 		icon:cookie[0,20]
+		req:5000 ram
 		passive:multiply yield of windows by 10
 		passive:grant 0.05 xp
 		req:27 xp
@@ -811,8 +817,9 @@ Upgrades
 	
 	*WinXII
 		name:Windows 10
-		desc:
+		desc:Stay connected. The most sleek interface ever combined with a lot of upgrades and a lot of updates.
 		icon:cookie[0,21]
+		req:8000 ram
 		passive:multiply yield of windows by 10
 		passive:grant 0.05 xp
 		req:30 xp
