@@ -62,6 +62,7 @@ Resources
 		req:12 xp
 		req:100 vault
 		text:Vault
+		cost increase:101%
 	
 	
 	/*    INTERNET STUFF
@@ -244,7 +245,7 @@ Buildings
 		limit:100%
 		on tick:yield 16000 money
 		on tick:yield 16000 data
-		cost increase:155%
+		cost increase:105%
 
 
 Upgrades
