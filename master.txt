@@ -57,7 +57,7 @@ Resources
 	
 	*security
 		name:Security
-		desc:You have [security] bytes locked here in the Vault. All this data can be destroyed with [data/25] money.
+		desc:You have [security] bytes locked here in the Vault. All this data can be self-destroyed with [data/25] money.
 		icon:http://icons.iconarchive.com/icons/simiographics/secure/48/PadLock-icon.png
 		req:12 xp
 		req:100 vault
@@ -129,6 +129,21 @@ Buildings
 		// try better next time
 		start with:1
 	
+	*cpu 
+		name:CPU
+		desc:It's your PC's brain. Upgrading it will make it faster and faster.<//>Creates <b>5 data</b> every second.
+		cost:15 data
+		on tick:yield 5 data
+		text:CPU core count: [cpu]
+		passive:grant 0.005 xp
+		
+	*cpu 
+		name:RAM
+		desc:Random Access Memory. It will make your code run faster.<//>Creates <b>20 data</b> every second.
+		cost:15 data
+		on tick:yield 20 data
+		text:RAM: [this] MB
+		passive:grant 0.005 xp
 		
 	*assembly
 		name:Assembly language
@@ -186,12 +201,12 @@ Buildings
 		on tick:yield 800 data
 		on tick:yield 100000 security
 		cost increase:120%
-		
+	
 		
 	*vault
 		name:Vault
 		text:Vault ([this]%)
-		desc:A super secure system.<//><b>The vault is [this]% complete.</b>
+		desc:A super secured system to secure data.<//><b>The vault is [this]% complete.</b>
 		icon:http://icons.iconarchive.com/icons/simiographics/secure/48/PadLock-icon.png
 		cost:700000 money
 		req:12 xp
@@ -204,7 +219,7 @@ Buildings
 		
 	*antivirus
 		name:Anti-virus
-		text:Antivirus Tower lv  [this]
+		text:Antivirus Tower lv [this]
 		desc:Unlocks the <b>destroy virus</b> ability .<//><b>Produces [this] power every second.</b>Max level is 500
 		icon:http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Status-security-high-icon.png
 		cost:1000000 data
@@ -217,7 +232,7 @@ Buildings
 	*windows
 		name:Windows
 		text:Windows ([this]%)
-		desc:The goodest operating system, made with C and C++.<//><b>Windows is [this]% complete.</b><b>Windows makes 16000 bytes every second.</b>
+		desc:The goodest operating system, made with C and C++.<//><b>Windows is [this]% complete.</b><b>You can unlock apps and applets and make a lot of stuff with this system</b>
 		icon:http://icons.iconarchive.com/icons/position-relative/social-2/48/windows-icon.png
 		cost:36000 data
 		req:9 xp
