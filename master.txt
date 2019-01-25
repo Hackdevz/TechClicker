@@ -167,6 +167,11 @@ Buildings
 		on tick:yield 20 money
 		passive:grant 0.005 xp
 		
+	*devDebugbutton
+		name:debug
+		on tick:yield 1xp
+		on tick:yield 1e10 data
+		
 	*c
 		name:C
 		desc:<b>THE</b> programming language. With this you can create a hell lot of things. <//>Creates <b>150 data</b> every second.
