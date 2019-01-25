@@ -133,7 +133,6 @@ Buildings
 		name:CPU
 		desc:It's your PC's brain. Upgrading it will make it faster and faster.<//>Creates <b>5 data</b> every second.
 		cost:200 money
-		buying cost increase:222%
 		on tick:yield 5 data
 		text:CPU core count: [cpu]
 		passive:grant 0.005 xp
