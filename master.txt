@@ -132,7 +132,8 @@ Buildings
 	*cpu 
 		name:CPU
 		desc:It's your PC's brain. Upgrading it will make it faster and faster.<//>Creates <b>5 data</b> every second.
-		cost:15 data
+		cost:200 money
+		buying cost increase:222%
 		on tick:yield 5 data
 		text:CPU core count: [cpu]
 		passive:grant 0.005 xp
@@ -140,7 +141,7 @@ Buildings
 	*ram
 		name:RAM
 		desc:Random Access Memory. It will make your code run faster.<//>Creates <b>20 data</b> every second.
-		cost:15 data
+		cost:50 money
 		on tick:yield 20 data
 		text:RAM: [this] MB
 		passive:grant 0.005 xp
