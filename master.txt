@@ -112,7 +112,7 @@ Layout
   		contains:buildings, upgrades
   		*buildings
     			contains:BulkDisplay, Buildings
-    			header:Languages & Apps
+    			header:Languages, Apps and Parts
     			tooltip origin:left
   		*upgrades
     			contains:Upgrades
@@ -137,7 +137,7 @@ Buildings
 		text:CPU core count: [cpu]
 		passive:grant 0.005 xp
 		
-	*cpu 
+	*ram
 		name:RAM
 		desc:Random Access Memory. It will make your code run faster.<//>Creates <b>20 data</b> every second.
 		cost:15 data
