@@ -168,7 +168,7 @@ Buildings
 		
 	*devDebugbutton
 		name:debug
-		on tick:yield 1xp
+		on tick:yield 1 xp
 		on tick:yield 1e10 data
 		
 	*c
