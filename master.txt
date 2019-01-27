@@ -14,7 +14,7 @@ Settings
 Buttons
 	*click
 		name:Write Code
-		desc:Write code, get data and earn money! All in one super technological button 2000!
+		desc:Write code.
 		on click:yield 1 data
 		on click:yield 1 money
 		class:bigButton hasFlares
@@ -22,6 +22,42 @@ Buttons
 		tooltip origin:bottom
 		show clicks
 		
+		
+	*remove
+        	name:Destroy a virus
+        	desc:Destroy a virus with <b>[75+antivirus*50]</b> power. You now have <b>[power]</b> power.
+        	no buy
+        	on click:if (power>=(75+antivirus*50)) yield -(75+antivirus*50) money
+		req:10 xp
+		req:1 antivirus
+        	on click:
+        	    if (power>=(75+antivirus*50))
+        	        if (chance(90%))
+        	            yield 1 virusDe
+			    yield (money/(power*1000*virusDe)) data
+               		     toast Virus destroyed!
+                	else
+                	    toast The virus won't go away. Try again!
+                	end
+           	 end
+       	 end
+		
+	*fixBug
+       		name:Fix the bug
+		req:5 xp
+        	desc:Fix a bug with <b>[money/10] money</b>
+        	no buy
+        	on click:if (money>=(money/10)) yield -(money/10) money
+        	on click:
+        	   if (money>=(money/10))
+        	        if (chance(70%))
+        	               yield ((data/10)/(bugsFix)) data
+                      	    toast You destroyed the bug.
+               		 else
+                    toast Bip bup, the bug is still there 
+                end
+            end
+        end
 Resources
 	*data
 		name:Bytes
@@ -46,7 +82,7 @@ Resources
 	*power
 		name:Antivirus power
 		text:Antivirus
-		desc:Anti-virus power: [power]<//>In this game, You destroyed [virusDe] viruses. <//>
+		desc:Anti-virus power: [power]<//>You destroyed <b>[virusDe]</b> viruses.<//>
 		icon:http://icons.iconarchive.com/icons/paomedia/small-n-flat/48/shield-icon.png
 		req:antivirus
 		req:10 xp
@@ -265,48 +301,12 @@ Buildings
 
 Upgrades
 
-	*fixBug
-        name:Fix the bug
-	req:5 xp
-        desc:Fix a bug with <b>[money/10] money</b>
-        no buy
-        on click:if (money>=(money/10)) yield -(money/10) money
-        on click:
-            if (money>=(money/10))
-                if (chance(70%))
-                    yield 1 bugsFix
-		    yield ((data/10)/(bugsFix)) data
-                    toast You destroyed the bug.
-                else
-                    toast Bip bup, the bug is still there 
-                end
-            end
-        end
 	
-	*remove
-        name:Destroy a virus
-        desc:Destroy a virus with <b>[75+antivirus*50]</b> power.
-        no buy
-        on click:if (power>=(75+antivirus*50)) yield -(75+antivirus*50) money
-	icon:http://icons.iconarchive.com/icons/hopstarter/malware/128/Protect-icon.png
-	req:10 xp
-	req:1 antivirus
-        on click:
-            if (power>=(75+antivirus*50))
-                if (chance(90%))
-                    yield 1 virusDe
-		    yield (money/(power*1000*virusDe)) data
-                    toast Virus destroyed!
-                else
-                    toast The virus won't go away. Try again!
-                end
-            end
-        end
 	
 	
 	*unlock
         name:Destroy the Vault.
-        desc:Destroy the Vault. You will get [security] bytes, but you have to pay [data:earned/25] money. This works only 75% of the time.
+        desc:Destroy the Vault. You will get [security] bytes, but you have to pay [data/25] money. This works only 75% of the time.
         no buy
 	req:12 xp
         on click:if (money>=(data:earned/25)) yield -(data:earned/25) money
