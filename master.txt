@@ -13,77 +13,7 @@ Settings
 	stylesheet:https://raw.githubusercontent.com/Hackdevz/Techlicker/master/style.txt
 Buttons
 	*click
-		name:Write Code
-		desc:Write code.
-		on click:yield 1 data
-		on click:yield 1 money
-		class:bigButton hasFlares
-		Icon:http://openclipart.org/image/250px/svg_to_png/159709/computer-laptop.png
-		tooltip origin:bottom
-		show clicks
-		
-		
-	
-Resources
-	*data
-		name:Bytes
-		desc:Your database contains [data] bytes. You're producing [data:ps] bytes every second.
-		text:Database
-		icon:http://icons.iconarchive.com/icons/paomedia/small-n-flat/48/database-icon.png
-			
-	*money
-		name:Money
-		desc:You have [money] $.  You're producing [money:ps] $ every second.
-		start with:250
-		text:Bank
-		icon:http://icons.iconarchive.com/icons/icojoy/enjoyment/48/money-icon.png
-	*xp
-		name:XP
-		desc:You're level [xp]
-		start with:1
-		text:XP
-		icon:http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Actions-rating-icon.png
-		
-		
-	*power
-		name:Antivirus power
-		text:Antivirus
-		desc:Anti-virus power: [power]<//>You destroyed <b>[virusDe]</b> viruses.<//>
-		icon:http://icons.iconarchive.com/icons/paomedia/small-n-flat/48/shield-icon.png
-		req:antivirus
-		req:10 xp
-		
-	*virusDe
-		always hidden
-		name:Virus destroyed
-	
-	*security
-		name:Security
-		desc:You have [security] bytes locked here in the Vault. All this data can be self-destroyed with [data/25] money.
-		icon:http://icons.iconarchive.com/icons/simiographics/secure/48/PadLock-icon.png
-		req:12 xp
-		req:100 vault
-		text:Vault
-		cost increase:101%
-	
-	
-	/*    INTERNET STUFF
-	*computer
-		name:Computers in your net
-		desc:You can do everything with this.
-		start with:1
-		icon:http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Devices-computer-icon.png
-		tag:stat */
-
-		
-	*Sec
-		name:Seconds played
-		tag:stat
-		always hidden
-		
-		
-	*Min
-		name:Time machine
+		name:Write Codex
 		tag:stat
 		text:[Min/60]:[Min%60]:[Sec%60]
 		desc:Time played : [Min/60]:[Min%60]:[Sec%60]
@@ -295,6 +225,7 @@ Upgrades
         	   if (money>=(money/10))
         	        if (chance(70%))
         	               yield ((data/10)/(bugsFix)) data
+			       yield 1 bugsFix
                       	    toast You destroyed the bug.
                		 else
                     toast Bip bup, the bug is still there 
