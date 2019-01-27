@@ -195,12 +195,24 @@ Buildings
 		passive:grant 0.005 xp
 		text:C++  lv [this]
 		
+	*python
+		name:Python
+		desc:Sounds like some easy stuff. It's a very easy language, and it's not that hard or expensive to learn.<//>Creates <b>3000 data</b> every second.
+		cost:240000 data
+		req:ClassyC
+		req:30 cpp
+		icon:http://iconshow.me/media/images/System/plex-icons/png/Other/48/python.png
+		on tick:yield 3000 data
+		on tick:yield 3000 money
+		passive:grant 0.005 xp
+		text:Python lv [this]
+		
 	
 		
 	*firewall
 		name:Firewall
 		text:Firewall ([this]%)
-		desc:A huge firewall to protect your data from viruses, which will take time and effort to complete.<//><b>The firewall is [this]% complete.</b>
+		desc:A huge firewall to protect your PC from viruses, which will take time and effort to complete.<//><b>The firewall is [this]% complete.</b>
 		icon:https://findicons.com/files/icons/977/rrze/48/firewall.png
 		cost:35000000 money
 		req:10 xp
@@ -225,22 +237,11 @@ Buildings
 		cost increase:101%
 		
 		
-	*antivirus
-		name:Anti-virus
-		text:Antivirus Tower lv [this]
-		desc:Unlocks the <b>destroy virus</b> ability .<//><b>Produces [this] power every second.</b>Max level is 500
-		icon:http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Status-security-high-icon.png
-		cost:1000000 data
-		req:10 xp
-		limit:500
-		on tick:yield 1 power	
-		on tick:yield 500 data
-		on tick:yield 500 money
-		
+			
 	*windows
 		name:Windows
 		text:Windows ([this]%)
-		desc:The goodest operating system, made with C and C++.<//><b>Windows is [this]% complete.</b><b>You can unlock apps and applets and make a lot of stuff with this system</b>
+		desc:An operating system. Idk what to do with this, really.<//><b>Windows is [this]% complete.</b>
 		icon:http://icons.iconarchive.com/icons/position-relative/social-2/48/windows-icon.png
 		cost:36000 data
 		req:9 xp
@@ -248,6 +249,18 @@ Buildings
 		on tick:yield 16000 money
 		on tick:yield 16000 data
 		cost increase:105%
+		
+	*antivirus
+		name:Anti-virus
+		text:Antivirus Tower lv [this]
+		desc:Unlocks the <b>destroy virus</b> ability .<//><b>Produces [this] power every second.</b>Max level is 500.
+		icon:http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Status-security-high-icon.png
+		cost:1000000 data
+		req:10 xp
+		limit:500
+		on tick:yield 1 power	
+		on tick:yield 500 data
+		on tick:yield 500 money
 
 
 Upgrades
@@ -495,17 +508,19 @@ Upgrades
 		
 	*Cp4
 		name:AtomiC++
-		desc:An atomic C++ compilator. Works fivice as fast.  Tier: Atomic
+		desc:An atomic C++ compiler. Works 5x as fast.  Tier: Atomic
 		icon:https://i.imgur.com/o1WgmFz.jpg
 		passive:multiply yield of cpp by 5
 		passive:grant 0.05 xp
 		req:100 cpp
 		cost:8e12 money
 	
+		
+	
 	
 	*C1
 		name:Ansi C
-		desc:An advanced C compilator. Works twice as fast.  Tier: ANSI
+		desc:An advanced C compiler. Works twice as fast.  Tier: ANSI
 		icon:https://i.imgur.com/6JvYppL.jpg 
 		passive:multiply yield of c by 2
 		passive:grant 0.05 xp
@@ -541,7 +556,32 @@ Upgrades
 		req:100 c
 		cost:3e11 money
 	
+	*python1
+		name:Python 1.0
+		desc:The first Python interpreter. Works 2x as fast.
+		icon:https://i.imgur.com/o1WgmFz.jpg
+		passive:multiply yield of python by 2
+		passive:grant 0.05 xp
+		req:15 python
+		cost:7e7 money
 		
+	*python2
+		name:Python 2.0
+		desc:The second Python interpreter. Works 4x as fast.
+		icon:https://i.imgur.com/o1WgmFz.jpg
+		passive:multiply yield of python by 2
+		passive:grant 0.05 xp
+		req:60 python
+		cost:7e10 money
+		
+	*python3
+		name:Python 3.0
+		desc:OH NO. Trying to use this is WAY too hard. But it's fast... Works 10x as fast.
+		icon:https://i.imgur.com/o1WgmFz.jpg
+		passive:multiply yield of python by 2
+		passive:grant 0.05 xp
+		req:150 python
+		cost:7e13 money
 	
 		
 	*WinI
