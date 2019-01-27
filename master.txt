@@ -559,7 +559,7 @@ Upgrades
 	*python1
 		name:Python 1.0
 		desc:The first Python interpreter. Works 2x as fast.
-		icon:https://i.imgur.com/o1WgmFz.jpg
+		icon:http://iconshow.me/media/images/System/plex-icons/png/Other/48/python.png
 		passive:multiply yield of python by 2
 		passive:grant 0.05 xp
 		req:15 python
@@ -568,7 +568,7 @@ Upgrades
 	*python2
 		name:Python 2.0
 		desc:The second Python interpreter. Works 4x as fast.
-		icon:https://i.imgur.com/o1WgmFz.jpg
+		icon:http://iconshow.me/media/images/System/plex-icons/png/Other/48/python.png
 		passive:multiply yield of python by 2
 		passive:grant 0.05 xp
 		req:60 python
@@ -577,7 +577,7 @@ Upgrades
 	*python3
 		name:Python 3.0
 		desc:OH NO. Trying to use this is WAY too hard. But it's fast... Works 10x as fast.
-		icon:https://i.imgur.com/o1WgmFz.jpg
+		icon:http://iconshow.me/media/images/System/plex-icons/png/Other/48/python.png
 		passive:multiply yield of python by 2
 		passive:grant 0.05 xp
 		req:150 python
