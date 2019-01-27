@@ -23,41 +23,7 @@ Buttons
 		show clicks
 		
 		
-	*remove
-        	name:Destroy a virus
-        	desc:Destroy a virus with <b>[75+antivirus*50]</b> power. You now have <b>[power]</b> power.
-        	no buy
-        	on click:if (power>=(75+antivirus*50)) yield -(75+antivirus*50) money
-		req:10 xp
-		req:1 antivirus
-        	on click:
-        	    if (power>=(75+antivirus*50))
-        	        if (chance(90%))
-        	            yield 1 virusDe
-			    yield (money/(power*1000*virusDe)) data
-               		     toast Virus destroyed!
-                	else
-                	    toast The virus won't go away. Try again!
-                	end
-           	 end
-       	 end
-		
-	*fixBug
-       		name:Fix the bug
-		req:5 xp
-        	desc:Fix a bug with <b>[money/10] money</b>
-        	no buy
-        	on click:if (money>=(money/10)) yield -(money/10) money
-        	on click:
-        	   if (money>=(money/10))
-        	        if (chance(70%))
-        	               yield ((data/10)/(bugsFix)) data
-                      	    toast You destroyed the bug.
-               		 else
-                    toast Bip bup, the bug is still there 
-                end
-            end
-        end
+	
 Resources
 	*data
 		name:Bytes
@@ -300,7 +266,41 @@ Buildings
 
 
 Upgrades
-
+ 	*remove
+        	name:Destroy a virus
+        	desc:Destroy a virus with <b>[75+antivirus*50]</b> power. You now have <b>[power]</b> power.
+        	no buy
+        	on click:if (power>=(75+antivirus*50)) yield -(75+antivirus*50) money
+		req:10 xp
+		req:1 antivirus
+        	on click:
+        	    if (power>=(75+antivirus*50))
+        	        if (chance(90%))
+        	            yield 1 virusDe
+			    yield (money/(power*1000*virusDe)) data
+               		     toast Virus destroyed!
+                	else
+                	    toast The virus won't go away. Try again!
+                	end
+           	 end
+       	 end
+		
+	*fixBug
+       		name:Fix the bug
+		req:5 xp
+        	desc:Fix a bug with <b>[money/10] money</b>
+        	no buy
+        	on click:if (money>=(money/10)) yield -(money/10) money
+        	on click:
+        	   if (money>=(money/10))
+        	        if (chance(70%))
+        	               yield ((data/10)/(bugsFix)) data
+                      	    toast You destroyed the bug.
+               		 else
+                    toast Bip bup, the bug is still there 
+                end
+            end
+        end
 	
 	
 	
