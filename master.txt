@@ -275,7 +275,7 @@ Upgrades
         desc:Destroy a virus with <b>[75+antivirus*50]</b> power.
         no buy
         on click:if (power>=(75+antivirus*50)) yield -(75+antivirus*50) money
-	icon:http://icons.iconarchive.com/icons/aha-soft/torrent/48/virus-icon.png
+	icon:http://icons.iconarchive.com/icons/hopstarter/malware/128/Protect-icon.png
 	req:10 xp
 	req:1 antivirus
         on click:
@@ -364,6 +364,16 @@ Upgrades
 		cost:160000 money
 		
 	
+	*shieldI
+		name:Shield.
+		desc:This is a shield to make your antivirus faster. Antivirus power is generated <b>35% faster</b>
+		passive:multiply yield of power by 1.35
+		passive:grant 0.1 xp
+		icon:http://icons.iconarchive.com/icons/paomedia/small-n-flat/128/shield-ok-icon.png
+		req:10 antivirus
+		cost:12000000 money
+			
+	
 		
 		
 	*assemblyI
@@ -386,84 +396,7 @@ Upgrades
 		req:10 assembly
 		cost:40000 money
 		
-	*assemblyIII
-		name:Assembler 4.0
-		desc:Your assembler works <b>100% faster</b>.   Tier: Azure
-		passive:multiply yield of assembly by 2
-		passive:grant 0.25 xp
-		icon:cookie[4,2]
-		req:3600000 data
-		req:50 assembly
-		cost:40000000 money
 	
-	*assemblyIV
-		name:Assembler 5.0
-		desc:Your assembler works <b>100% faster</b>.   Tier: Goldy
-		passive:multiply yield of assembly by 2
-		passive:grant 0.2 xp
-		icon:cookie[4,13]
-		req:360000000 data
-		req:100 assembly
-		cost:4000000000 money
-		
-	
-	*assemblyV
-		name:Assembler 6.0
-		desc:Your assembler works <b>100% faster</b>.   Tier: Special
-		passive:multiply yield of assembly by 2
-		passive:grant 0.12 xp
-		icon:cookie[4,14]
-		req:36000000000 data
-		req:200 assembly
-		cost:400000000000 money
-	*assemblyVI
-		name:Assembler 7.0
-		desc:Your assembler works <b>100% faster</b>.   Tier: Metal
-		passive:multiply yield of assembly by 2
-		passive:grant 0.12 xp
-		icon:cookie[4,15]
-		req:3600000000000 data
-		req:300 assembly
-		cost:400000000000000 money
-		
-	*assemblyVII
-		name:Assembler 8.0
-		desc:Your assembler works <b>100% faster</b>.   Tier: Minty
-		passive:multiply yield of assembly by 2
-		passive:grant 0.07 xp
-		icon:cookie[4,16]
-		req:3600000000000000 data
-		req:400 assembly
-		cost:400000000000000000 money
-		
-	*assemblyVIII
-		name:Assembler 9.0
-		desc:Your assembler works <b>100% faster</b>.   Tier: Platinum
-		passive:multiply yield of assembly by 2
-		passive:grant 0.07 xp
-		icon:cookie[4,17]
-		req:500 assembly
-		cost:4e19 money
-				
-	*assemblyIX
-		name:Assembler X
-		desc:Your assembler works <b>100% faster</b>.   Tier: Green
-		passive:multiply yield of assembly by 2
-		passive:grant 0.07 xp
-		icon:cookie[4,18]
-		req:600 assembly
-		cost:4e22 money
-		
-	*assemblyX
-		name: The Ultimate Assembly
-		desc:Your assembler works <b>100% faster</b>.   Tier: Final
-		passive:multiply yield of assembly by 2
-		passive:grant 0.07 xp
-		icon:cookie[4,19]
-		req:700 assembly
-		cost:4e25 money
-		
-		
 // Fortran
 	
 	*fortranI
@@ -526,42 +459,6 @@ Upgrades
 		req:300 fortran
 		cost:1e15 money
 		
-	*fortranVII
-		name:Fortran 99
-		desc:Your fortran works <b>100% faster</b>.   Tier: Minty
-		passive:multiply yield of fortran by 2
-		passive:grant 0.07 xp
-		icon:cookie[4,16]
-		req:3600000000000000 data
-		req:400 fortran
-		cost:1e17 money
-		
-	*fortranVIII
-		name:Fortran 111
-		desc:Your fortran works <b>100% faster</b>.   Tier: Platinum
-		passive:multiply yield of fortran by 2
-		passive:grant 0.07 xp
-		icon:cookie[4,17]
-		req:500 fortran
-		cost:1e20 money
-				
-	*fortranIX
-		name:Fortran X
-		desc:Your fortran works <b>100% faster</b>.   Tier: Green
-		passive:multiply yield of fortran by 2
-		passive:grant 0.07 xp
-		icon:cookie[4,18]
-		req:600 fortran
-		cost:1e23 money
-		
-	*fortranX
-		name: The Ultimate Fortran
-		desc:Your fortran works <b>100% faster</b>.   Tier: Final
-		passive:multiply yield of fortran by 2
-		passive:grant 0.07 xp
-		icon:cookie[4,19]
-		req:700 fortran
-		cost:1e26 money
 		
 		
 		//https://i.imgur.com/o1WgmFz.jpg C++
@@ -589,7 +486,7 @@ Upgrades
 		
 	*Cp3
 		name:TCC++
-		desc:An hyper-advanced C++ compilator. Works fourice as fast.  Tier: ANSI++
+		desc:A very good C++ compilator.
 		icon:https://i.imgur.com/o1WgmFz.jpg
 		passive:multiply yield of cpp by 4
 		passive:grant 0.05 xp
@@ -605,44 +502,7 @@ Upgrades
 		req:100 cpp
 		cost:8e12 money
 	
-	*Cp5
-		name:Revolver C++
-		desc:The newest C++ compilator. Works ten times as fast.  Tier: Revolver
-		icon:https://i.imgur.com/o1WgmFz.jpg
-		passive:multiply yield of cpp by 10
-		passive:grant 0.05 xp
-		req:200 cpp
-		cost:8e15 money
-		
-		
-	*Cp6
-		name:Explosive-C++
-		desc:The most explosive C++ compilator! This makes C++ work eleven times as fast.  Tier: Explosive
-		icon:https://i.imgur.com/o1WgmFz.jpg
-		passive:multiply yield of cpp by 11
-		passive:grant 0.05 xp
-		req:300 cpp
-		cost:8e18 money
-		
-	*Cp7
-		name:Shadow.
-		desc:The darkest C++ compilator. Works 20 times as fast.  Tier: Dark
-		icon:https://i.imgur.com/o1WgmFz.jpg
-		passive:multiply yield of cpp by 20
-		passive:grant 0.05 xp
-		req:400 cpp
-		cost:8e21 money
 	
-	*CpX
-		name:X++
-		desc:Has C++ gone too far?
-		icon:https://i.imgur.com/o1WgmFz.jpg
-		passive:multiply yield of cpp by (cpp/2)
-		passive:grant 0.05 xp
-		req:1000000 data
-		req:96 xp
-		cost:8e30 money
-		
 	*C1
 		name:Ansi C
 		desc:An advanced C compilator. Works twice as fast.  Tier: ANSI
@@ -681,25 +541,7 @@ Upgrades
 		req:100 c
 		cost:3e11 money
 	
-	*C5
-		name:A piece of TNT that got hacked into a C compilator.
-		desc:
-		icon:https://i.imgur.com/6JvYppL.jpg 
-		passive:multiply yield of c by 10
-		passive:grant 0.05 xp
-		req:200 c
-		cost:3.14159265e14 money
-		//PI
 		
-	*C6
-		name:C4
-		desc:Collides carbon atoms to compile C code.  Tier: Explosive
-		icon:https://i.imgur.com/6JvYppL.jpg 
-		passive:multiply yield of c by 11
-		passive:grant 0.05 xp
-		req:300 c
-		cost:3e17 money
-	
 	
 		
 	*WinI
@@ -826,4 +668,5 @@ Upgrades
 		cost:1e22 money
 
 	
-		
+
+
