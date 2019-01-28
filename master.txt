@@ -362,8 +362,7 @@ Upgrades
 	*javaUnlock
 		name:Coffee Pot
 		desc:I mean, it's coffee...<//><b>You now program 50% faster.</b>
-		multiply yield of data by 1.5
-		multiply yield of data by 1.5
+		passive:multiply yield of data by 1.5
 		passive:grant 0.1 xp
 		icon:http://icons.iconarchive.com/icons/hopstarter/gloss-mac/48/Java-Preferences-icon.png
 		req:13 xp
